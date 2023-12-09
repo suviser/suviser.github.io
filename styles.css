@@ -230,3 +230,40 @@ p {
     margin: 15px auto; /* Выравнивание по центру */
     box-shadow: 0 0 5px 2px white; /* Тень для объема */
   }
+
+.role-avatar {
+    max-width: 200px; /* Уменьшил максимальную ширину */
+    max-height: 200px; /* Уменьшил максимальную высоту */
+    border-radius: 50%; /* Делаем круглую форму */
+    border: 2px solid #0d6efd; /* Добавляем рамку с цветом #0d6efd */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+}
+
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.role-avatar {
+    margin-right: 100px;
+}
+
+#fff {
+    margin-bottom: 50px;
+}
+
+#ffg {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.hidden {
+    display: none;
+}
