@@ -1,0 +1,232 @@
+/* Ваши стили для styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #fff; /* Изменили цвет фона на чисто белый */
+    color: #272727; /* Сделали цвет текста черным */
+}
+
+header {
+    background: #fcfefd;
+    color: #000000; /* Сделали цвет текста в header черным */
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    max-width: 10%; /* Уменьшаем максимальную ширину логотипа в 10 раз. Было 12% */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0.5em 0 0.2em;
+}
+
+nav {
+    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Градиент светло-серого */
+    padding: 0.0em; /*Было 1, а потом 0.7, а не 0.0, если что поменяй назад!*/
+    text-align: center;
+    /* background-color: transparent; */
+    background: none;
+}
+
+nav a {
+    color: #000; /* Сделали цвет текста в навигации черным */
+    text-decoration: none;
+    padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
+    margin: 0 1em;
+    border-radius: 4px; /*Было 8*/
+    transition: background-color 0.3s ease;
+    display: inline-block;
+     /*border: 1px solid #ddd; Добавили белую рамку ВАЖНО! */
+    /* background-color: transparent; */
+}
+
+nav a:hover {
+    background: #fff;
+    color: #0d6efd;
+    background-color: transparent;
+    /* border: 1px solid #ddd; */
+}
+
+nav ul {
+    background: linear-gradient(to right, #ffffff, #fafafa); /* Градиент светло-серого */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #aeaeae;
+} 
+/* ВОТ ЗДЕСЬ В НАВУЛ НУЖНО КРУТИТЬ ВЕРТЕТЬ И ВСЁ БУДЕТ ЗАЕБИСЬ! */
+
+nav li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /* background-color: transparent; */
+}
+
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Градиент светло-серого */
+    border-radius: 0 0 8px 8px;
+    /* background-color: transparent; */
+}
+
+
+
+nav ul ul li {
+    border-bottom: 1px solid #fff;
+    margin: 0;
+    /* background-color: transparent; */
+}
+
+
+
+nav ul ul li:last-child {
+    border-bottom: none;
+    /* background-color: transparent; */
+}
+
+
+nav li:hover > ul {
+    display: flex;
+    /* flex-direction:column; */
+    /* background-color: transparent; */
+
+}
+
+
+
+
+section {
+    max-width: 1200px;
+    margin: 0.5em auto; /* Уменьшено расстояние между секциями */
+    padding: 2em;
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    border: 1px solid #272727;
+}
+
+h2, h3 {
+    color: #000; /* Сделали цвет текста в h2 черным */
+    text-align: center;
+}
+
+
+
+section p strong {
+    font-weight: bold;
+}
+
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background: linear-gradient(to right, #7fad77, #0d6efd);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: linear-gradient(to right, #0d6efd, #7fad77);
+}
+
+footer {
+    background: linear-gradient(to right, #ffffff, #f0f0f0); /* Градиент светло-серого */
+    color: #000; /* Сделали цвет текста в футере черным */
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: relative;
+    clear: both;
+}
+
+#slogans {
+    text-align: center;
+    background-image: url('your_background_image_url.jpg'); /* Замените на фактический URL вашего фона */
+    background-size: cover;
+    background-position: center center; /* Добавлено для центрирования фона */
+    padding: 4em 0;
+}
+
+#slogan {
+    font-style: italic;
+    font-weight: bold;
+    color: #333; /* Цвет текста */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Добавлен эффект тени */
+    margin: 0;
+    text-align: center;
+}
+
+
+p {
+    text-indent: 30px;
+    margin-top: -0.5em;
+}
+
+#ntske {
+    text-align: right;
+}
+
+#ppf {
+    text-indent: 0px;
+    margin-top: auto;
+}
+
+#ebsp {
+    margin-top: -0.7em;
+}
+
+
+
+#h2 {
+    color: #000;
+}
+
+
+  .button {
+    width: 70px; /* Ширина кнопки Было по 100 */
+    height: 70px; /* Высота кнопки */
+
+    border-radius: 40%; /* Делаем круглую форму Было 50%*/
+    background-color: white; /* Цвет фона */
+    color: black; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    position: fixed; /* Фиксируем позицию */
+    bottom: 10px; /* Отступ снизу */
+    right: 10px; /* Отступ справа */
+  }
+  
+  /* Стиль для анимации при наведении */
+  .button:hover {
+    transform: scale(1.15); /* Увеличиваем размер */
+    transition: 0.3s; /* Длительность анимации */
+  }
+  
+  /* Стиль для стрелки вверх */
+  .arrow {
+    width: 0; /* Ширина стрелки */
+    height: 0; /* Высота стрелки */
+    border-left: 15px solid transparent; /* Левая часть стрелки */
+    border-right: 15px solid transparent; /* Правая часть стрелки */
+    border-bottom: 30px solid black; /* Нижняя часть стрелки */
+    margin: 15px auto; /* Выравнивание по центру */
+    box-shadow: 0 0 5px 2px white; /* Тень для объема */
+  }
