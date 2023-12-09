@@ -310,3 +310,24 @@ p {
         margin: 0 auto; /* Центрирование аватарок и изображений */
     }
 }
+
+
+/* Your existing styles */
+
+.nav-dropdown ul {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .nav-dropdown ul {
+      display: block;
+    }
+  
+    .nav-dropdown ul a {
+      display: block;
+      padding: 0.3em 0.5em;
+      margin: 0.2em 0;
+      font-size: 0.8em;
+    }
+  }
+  

@@ -10,3 +10,10 @@ function toggleSection(sectionId) {
     // Обновляем текущую видимую секцию
     currentSectionId = sectionId;
 }
+
+
+function toggleNav() {
+    var dropdown = document.querySelector('.nav-dropdown ul');
+    dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+  }
+  
