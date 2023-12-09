@@ -267,41 +267,6 @@ p {
 }
 
 
-
-/* Добавлены стили для мобильных устройств */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 1em 0;
-    }
-
-    #logo {
-        max-width: 50%; /* Уменьшено максимальное значение ширины логотипа на мобильных устройствах */
-    }
-
-    nav {
-        padding: 0.5em;
-    }
-
-    nav a {
-        padding: 0.3em 0.5em;
-        margin: 0 0.5em;
-    }
-
-    section {
-        padding: 1em;
-    }
-
-    h2, h3 {
-        text-align: left;
-    }
-
-    .button {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-
 /* Добавлены стили для мобильных устройств */
 @media only screen and (max-width: 600px) {
     header {
@@ -331,47 +296,11 @@ p {
         text-align: center; /* Выравнивание заголовков по центру */
     }
 
-    .button {
-        width: 50px;
-        height: 50px;
-    }
-}
-
-
-/* Добавлены стили для мобильных устройств */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 1em 0;
-    }
-
-    #logo {
-        max-width: 50%;
-    }
-
-    nav {
-        padding: 0.5em;
-    }
-
-    nav a {
-        padding: 0.3em 0.5em;
-        margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
-        font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
-    }
-
-    section {
-        padding: 1em;
-        text-align: center; /* Выравнивание текста по центру */
-    }
-
-    h2, h3 {
-        text-align: center; /* Выравнивание заголовков по центру */
-    }
-
-    .button {
+    /* .button {
         width: 50px;
         height: 50px;
         position: relative;
-        background-color: #3498db; /* Цвет кнопки (можете изменить на свой) */
+        background-color: #3498db; Цвет кнопки (можете изменить на свой)
         border: none;
         border-radius: 50%;
         cursor: pointer;
@@ -383,10 +312,17 @@ p {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) rotate(45deg);
-        width: 20px; /* Увеличен размер треугольника */
-        height: 20px; /* Увеличен размер треугольника */
+        width: 20px;
+        height: 20px; 
         border-style: solid;
         border-width: 2px 2px 0 0;
-        border-color: #fff; /* Цвет треугольника */
+        border-color: #fff;
+    } */
+    
+    .button, .arrow {
+        display: none; /* Скрыть кнопку и стрелку */
     }
+
+
+
 }
