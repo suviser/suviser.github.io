@@ -299,3 +299,39 @@ p {
         height: 50px;
     }
 }
+
+
+/* Добавлены стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1em 0;
+    }
+
+    #logo {
+        max-width: 50%;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 0.3em 0.5em;
+        margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
+        font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
+    }
+
+    section {
+        padding: 1em;
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    h2, h3 {
+        text-align: center; /* Выравнивание заголовков по центру */
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+}
