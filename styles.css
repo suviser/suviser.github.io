@@ -265,3 +265,37 @@ p {
 .hidden {
     display: none;
 }
+
+
+/* Добавлены стили для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1em 0;
+    }
+
+    #logo {
+        max-width: 50%; /* Уменьшено максимальное значение ширины логотипа на мобильных устройствах */
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a {
+        padding: 0.3em 0.5em;
+        margin: 0 0.5em;
+    }
+
+    section {
+        padding: 1em;
+    }
+
+    h2, h3 {
+        text-align: left;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+    }
+}
