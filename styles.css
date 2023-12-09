@@ -36,7 +36,7 @@ nav {
     background: none;
 }
 
-nav a {
+nav a, span {
     color: #000; /* Сделали цвет текста в навигации черным */
     text-decoration: none;
     padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
@@ -90,6 +90,7 @@ nav ul ul {
 nav ul ul li {
     border-bottom: 1px solid #fff;
     margin: 0;
+    align-self: center;
     /* background-color: transparent; */
 }
 
@@ -313,21 +314,3 @@ p {
 
 
 /* Your existing styles */
-
-.nav-dropdown ul {
-    display: none;
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .nav-dropdown ul {
-      display: block;
-    }
-  
-    .nav-dropdown ul a {
-      display: block;
-      padding: 0.3em 0.5em;
-      margin: 0.2em 0;
-      font-size: 0.8em;
-    }
-  }
-  
