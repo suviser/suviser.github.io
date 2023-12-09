@@ -289,6 +289,12 @@ p {
 
     section {
         padding: 1em;
+        margin-right: 5px; /* Небольшой отступ справа */
+        margin-left: 5px; /* Небольшой отступ слева */
+    }
+
+    p, span, a {
+        text-align: left; /* Убрано центрирование текста (кроме заголовков) */
     }
 
     h2, h3 {
