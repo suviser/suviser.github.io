@@ -314,3 +314,37 @@ p {
 
 
 /* Your existing styles */
+
+.quote-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quote-container blockquote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .quote-container blockquote strong {
+    font-weight: bold;
+  }
+  
+  .quote-container p.quote-author {
+    font-style: normal;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+  }
+
+  .quote-author {
+    font-size: 14px;
+    font-style: normal;
+    text-align: right;
+    margin: 0;
+    padding: 0 10px;
+  }
+  
