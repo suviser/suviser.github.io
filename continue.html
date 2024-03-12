@@ -10,6 +10,59 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>et Human</title>
+
+ <script>
+    function toggleIframe() {
+      var x = document.getElementById("iframeSection");
+      var buttonText = document.getElementById("centered-button");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        buttonText.textContent = "Скрыть таблицу";
+      } else {
+        x.style.display = "none";
+        buttonText.textContent = "Показать таблицу";
+      }
+    }
+    </script>
+      
+      <style>
+        #iframeSection {
+        display: none;
+        }
+        #centered-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #0078D7;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        
+        /* Анимация */
+        transition: all 0.5s ease;
+        }
+
+        #centered-button.active {
+        background-color: #0078D7;
+        color: white;
+        /* Добавьте сюда анимацию при нажатии */
+        box-shadow: 0 0 5px #0078D7;
+        }
+
+        #centered-button:hover {
+        /* Добавьте сюда анимацию при наведении */
+        background-color: #005fa7;
+        }
+
+        #centered-button.inactive {
+        background-color: #ccc;
+        color: black;
+        }
+      </style>
+
 </head>
 
 <body>
@@ -25,11 +78,14 @@
 
 
     <section>
-        <h2>Tempor</h2>
+        <h2 style="padding-bottom: 0; margin-bottom: 0;">et Nota</h2>
+        <h3 style="padding-top: 0; margin-top: 0;">(или бывш. &laquo;Занимательный заметчик&raquo; &mdash; Noter)</h3>
         <p>
-            Nam tempor eleifend diam, nec rutrum turpis gravida at. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.
-            Proin tincidunt, libero vitae elementum euismod, nisl risus lobortis urna, in porta erat erat in lectus.
-            Pellentesque aliquet dignissim ultricies.
+            et Nota &mdash; это инновационное приложение для создания заметок, которое выглядит, как чат, и наделено
+            продвинутой и такой же инновационной системой навигации по заметкам. Это &mdash; революцию!
+            Это самый быстрый и удобный способ создания заметок и ориентации по ним, который обладает простым и интуитивно
+            понятным интерфейсом.
+
         </p>
     </section>
         
@@ -52,9 +108,6 @@
         <br>
         <hr>
 
-        <br>
-        <hr>
-
         <h3>Бизнес-план</h3>
         <p>Ниже описан бизнес-план проекта <strong>et Nota</strong>.</p>
         <section style="display: flex; justify-content: center;">
@@ -63,11 +116,19 @@
         <br>
         <hr>
 
-        <h3>Финансовый план</h3>
+        <!-- <h3>Финансовый план</h3>
         <p>Ниже описан финплан проекта <strong>et Nota</strong> с 3 (2) квартала 2024 по 2 квартал 2025.</p>
         <section style="display: flex; justify-content: center;">
-            <iframe src="https://1drv.ms/x/s!Aktqq-I8y6KU7CqJ84BfooqqFJmu?e=Dlwgyg" frameborder="0" width="100%" height="600" ></iframe>
-        </section>
+            <iframe src="https://1drv.ms/x/s!Aktqq-I8y6KU7CqJ84BfooqqFJmu" frameborder="0" width="100%" height="600"></iframe>
+            
+        </section> -->
+        <h3>Финансовый план</h3>
+        <p>Ниже описан финплан проекта <strong>et Nota</strong> с 3 (2) квартала 2024 по 2 квартал 2025.</p>
+        <button id="centered-button" onclick="toggleIframe()">Показать таблицу</button>
+        <section id="iframeSection" style="display: none;">
+
+            <iframe src="https://1drv.ms/x/s!Aktqq-I8y6KU7CqJ84BfooqqFJmu?e=Dlwgyg" frameborder="0" width="100%" height="600"></iframe>
+          </section>
 
     </section>
 
