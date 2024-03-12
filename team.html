@@ -15,23 +15,9 @@
         <p id="ppf">В прошлом, настоящем и будущем — Человек!</p>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная — об et Human</a></li>
-            <li><a href="continue.html">Продолжение...</a></li>
-            <li>
-                <span>Проекты</span>
-                <ul>
-                    <li><a href="connection.html">Связь</a></li>
-                    <li><a href="trinity.html" style="color: crimson;">Триада знания</a></li>
-                    <li><a href="activity.html">Деятельность</a></li>
-                </ul>
-            </li>
-            <li><a href="team.html" style="color: limegreen;">Команда — Поиск</a></li>
-            <li><a href="about-me.html">Про меня + контакты</a></li>
-            <!-- <li><a href="investments.html" style="color: crimson;">Инвестиции — поиск</a></li> -->
-        </ul>
-    </nav>
+
+    <div id="nav-placeholder"></div>
+    <script src="navigation.js"></script>
     
     <section id="team-search">
         <h2>Поиск Команды</h2>
@@ -40,9 +26,9 @@
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <div id="ffg"><button onclick="toggleSection('section1')">Мартрип (Маркетолог)</button>
-            <button onclick="toggleSection('section2')">Протрип (Программист)</button>
-            <button onclick="toggleSection('section3')">Дизтрип (Дизайнер)</button>
+        <div id="ffg"><button onclick="toggleSection('section1')">&laquo;Маркетолог&raquo;</button>
+            <button onclick="toggleSection('section2')">&laquo;Программист&raquo;/&laquo;IT-шник&raquo;</button>
+            <button onclick="toggleSection('section3')">&laquo;Дизайнер&raquo;</button>
         </div>
     </section>
 
@@ -51,7 +37,7 @@
         <div id="container">
             <img class="role-avatar" class="p-flex" src="marketer_avatar.jpg" alt="Marketer Avatar">
             <div>
-                <h2 id="fff">Маркетолог</h2>
+                <h2 id="fff">&laquo;Маркетолог&raquo;</h2>
                 <p><strong>Характеристики:</strong></p>
                 <ul>
                     <li>Творческий идеолог</li>
@@ -76,7 +62,7 @@
         <div id="container">
             <img class="role-avatar" src="programmer_avatar.jpg" alt="Programmer Avatar">
             <div>
-                <h2 id="fff">Программист</h2>
+                <h2 id="fff">&laquo;Программист&raquo;/&laquo;IT-шник&raquo;</h2>
                 <p><strong>Характеристики:</strong></p>
                 <ul>
                     <li>Эксперт в языках программирования</li>
@@ -101,7 +87,7 @@
         <div id="container">
             <img class="role-avatar" src="designer_avatar.jpg" alt="Designer Avatar">
             <div>
-                <h2 id="fff">Дизайнер</h2>
+                <h2 id="fff">&laquo;Дизайнер&raquo;</h2>
                 <p><strong>Характеристики:</strong></p>
                 <ul>
                     <li>Мастер креативных идей</li>
