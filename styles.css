@@ -20,8 +20,8 @@ header {
     max-width: 10%; /* Уменьшаем максимальную ширину логотипа в 10 раз. Было 12% */
     height: auto;
     display: block;
-    margin: 0 auto;
     border-radius: 8px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -347,4 +347,5 @@ p {
     margin: 0;
     padding: 0 10px;
   }
+  
   
