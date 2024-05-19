@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.main-sections {
+    display: flex;
+    flex: 1;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease;
+}
+
+.section:hover::before {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.self-development {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.business {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+}
+
+.economics {
+    background: linear-gradient(135deg, #30cfd0, #330867);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    transition: color 0.5s ease;
+}
+
+.content p {
+    margin: 0;
+    font-size: 1.2em;
+    transition: color 0.5s ease;
+}
+
+.section:hover .content h2,
+.section:hover .content p {
+    color: #ffeb3b;
+}
+
+.section::after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: skewY(-10deg);
+    transition: bottom 0.5s ease;
+}
+
+.section:hover::after {
+    bottom: 0;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7);
+    transition: filter 0.5s ease;
+}
+
+.section:hover .image-container {
+    filter: brightness(1);
+}
+
+.contact-section {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px; /* уменьшено */
+}
+
+.contact-section h2 {
+    margin-bottom: 10px; /* уменьшено */
+    font-size: 1.5em; /* уменьшено */
+}
+
+.contact-section p {
+    margin: 5px 0;
+    font-size: 1em; /* уменьшено */
+}
+
+.social-icons {
+    margin-top: 5px; /* уменьшено */
+}
+
+.social-icons a {
+    color: #e0e0e0;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2em; /* уменьшено */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffeb3b;
+}
