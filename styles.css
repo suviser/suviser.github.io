@@ -278,11 +278,12 @@ p {
         max-width: 50%;
     }
 
-    /* nav {
-        padding: 0.5em;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
-    } */
+    nav {
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
+    }
 
     nav a, span {
         padding: 0.3em 0.5em;
