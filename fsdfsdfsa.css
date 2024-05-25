@@ -1,31 +1,41 @@
-/* Ваши стили для styles.css */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #fff; /* Изменили цвет фона на чисто белый */
-    color: #272727; /* Сделали цвет текста черным */
+    background: linear-gradient(to right, #ffffff, #e0eafc); /* Градиентный фон */
+    color: #272727;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
 }
 
 header {
-    background: #fcfefd;
-    color: #000000; /* Сделали цвет текста в header черным */
+    background: linear-gradient(to right, #fcfefd, #d9f3fe); /* Обновленный градиент для header */
+    color: #000000;
     padding: 2em 0;
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Добавляем тень */
 }
 
+
 #logo {
-    max-width: 10%; /* Уменьшаем максимальную ширину логотипа в 10 раз. Было 12% */
+    max-width: 18%;
     height: auto;
     display: block;
     border-radius: 8px;
     margin: 0 auto;
+    transition: transform 1s ease;
+}
+
+#logo:hover {
+    transform: rotate(360deg); /* Анимация вращения */
 }
 
 h1 {
     margin: 0.5em 0 0.2em;
+    font-size: 2em;
+    letter-spacing: 2px; /* Расширение межбуквенного интервала */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Тень для текста */
 }
 
 nav {
@@ -56,7 +66,7 @@ nav a:hover {
 }
 
 nav ul {
-    background: linear-gradient(to right, #ffffff, #fafafa); /* Градиент светло-серого */
+    background: linear-gradient(to right, #ffffff, #e1d7ff); /* Градиент светло-серого */
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -379,5 +389,4 @@ p {
     left: 150px;
     transition: .5s ease-in-out;
 }
-
 
