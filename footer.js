@@ -3,3 +3,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
       .then(response => response.text())
       .then(text => document.getElementById('footer-placeholder').innerHTML = text);
   });
+
