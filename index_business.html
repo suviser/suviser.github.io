@@ -238,7 +238,31 @@
         </p> -->
     </section>
 
-    
+    <button onclick="goToTop()" id="goToTop">Наверх</button>
+<script>
+    window.onload = function() {
+      scrollToTop(); // При загрузке страницы
+    };
+  
+    window.onscroll = function() {scrollFunction()};
+  
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("goToTop").style.display = "block";
+      } else {
+        document.getElementById("goToTop").style.display = "none";
+      }
+    }
+  
+    function goToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  
+    function scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+  </script>
     <footer>
         <p>&copy; 2023 et Human. All Rights Reserved.</p>
     </footer>
