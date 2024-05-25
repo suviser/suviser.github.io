@@ -415,9 +415,11 @@ p {
 }
 
 
-/* Стили для черной темы */
 @media (prefers-color-scheme: dark) {
     #logo {
         background-color: white;
+        color: #fe6637;
+        font-size: large;
+        border-radius: 10px;
     }
 }
