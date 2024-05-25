@@ -21,7 +21,8 @@ header {
     height: auto;
     display: block;
     border-radius: 8px;
-    margin: 0 auto;
+    display: inline;
+    margin: 0 50px;
 }
 
 h1 {
@@ -275,7 +276,7 @@ p {
     }
 
     #logo {
-        max-width: 50%;
+        max-width: 10%;
     }
 
     nav {
