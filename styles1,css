@@ -1,0 +1,378 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff, #e0eafc); /* Градиентный фон */
+    color: #272727;
+    overflow-x: hidden; /* Убираем горизонтальную прокрутку */
+}
+
+header {
+    background: linear-gradient(to right, #fcfefd, #c0e8f9); /* Обновленный градиент для header */
+    color: #000000;
+    padding: 2em 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+#logo {
+    max-width: 10%;
+    height: auto;
+    display: block;
+    border-radius: 50%; /* Сделал логотип круглым */
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Увеличил тень */
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: rotate(360deg); /* Анимация вращения */
+}
+
+h1 {
+    margin: 0.5em 0 0.2em;
+    font-size: 3em;
+    letter-spacing: 2px; /* Расширение межбуквенного интервала */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Тень для текста */
+}
+
+nav {
+    background: linear-gradient(to right, #ffffff, #e0eafc);
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px; /* Закругление краев */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+nav a, span {
+    color: #000;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    margin: 0 1em;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 1.2em; /* Увеличение шрифта */
+}
+
+nav a:hover {
+    background: #0d6efd;
+    color: #fff;
+    transform: scale(1.1); /* Анимация увеличения */
+}
+
+nav ul {
+    background: linear-gradient(to right, #ffffff, #e0eafc);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #aeaeae;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+nav li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to right, #ffffff, #f0f0f0);
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Увеличил тень */
+    z-index: 1000;
+}
+
+nav ul ul li {
+    border-bottom: 1px solid #ddd;
+    margin: 0;
+    align-self: center;
+}
+
+nav ul ul li:last-child {
+    border-bottom: none;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+section {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em;
+    background: linear-gradient(to bottom, #ffffff, #f0f8ff);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3); /* Увеличил тень */
+    border-radius: 16px;
+    border: 1px solid #272727;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02); /* Анимация увеличения */
+}
+
+h2, h3 {
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Увеличение межбуквенного интервала */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Тень для текста */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background: linear-gradient(to right, #7fad77, #0d6efd);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+}
+
+.cta-button:hover {
+    background: linear-gradient(to right, #0d6efd, #7fad77);
+    transform: translateY(-5px); /* Анимация поднятия */
+}
+
+footer {
+    background: linear-gradient(to right, #ffffff, #e0eafc);
+    color: #000;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    position: relative;
+    clear: both;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1); /* Тень для футера */
+}
+
+#slogans {
+    text-align: center;
+    background-image: url('your_background_image_url.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 4em 0;
+}
+
+#slogan {
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Увеличенная тень для контраста */
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+p {
+    text-indent: 30px;
+    margin-top: 0;
+    line-height: 1.6; /* Улучшение читаемости */
+}
+
+#ntske {
+    text-align: right;
+}
+
+#ppf {
+    text-indent: 0px;
+    margin-top: auto;
+}
+
+#ebsp {
+    margin-top: -0.7em;
+}
+
+#h2 {
+    color: #000;
+}
+
+.button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #0d6efd, #7fad77); /* Градиент для кнопки */
+    color: white;
+    font-size: 16px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Увеличенная тень */
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.15);
+    background: linear-gradient(to bottom, #7fad77, #0d6efd);
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid white;
+    margin: 15px auto;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); /* Увеличенная тень */
+}
+
+.role-avatar {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    border: 2px solid #0d6efd;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Увеличенная тень */
+    transition: transform 0.3s ease;
+}
+
+.role-avatar:hover {
+    transform: scale(1.1);
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.role-avatar {
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+#fff {
+    margin-bottom: 50px;
+}
+
+#ffg {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 1em 0;
+    }
+
+    #logo {
+        max-width: 50%;
+    }
+
+    nav {
+        padding: 0.5em;
+    }
+
+    nav a, span {
+        padding: 0.3em 0.5em;
+        margin: 0 0.2em;
+        font-size: 0.8em;
+    }
+
+    section {
+        padding: 1em;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    p, span, a {
+        text-align: left;
+    }
+
+    #ppf, #slogan, h1, h2, h3 {
+        text-align: center;
+    }
+
+    .button, .arrow {
+        display: none;
+    }
+
+    .avatar, img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.quote-container {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote-container blockquote {
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.quote-container blockquote strong {
+    font-weight: bold;
+}
+
+.quote-container p.quote-author {
+    font-style: normal;
+    font-size: 14px;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.quote-author {
+    font-size: 14px;
+    font-style: normal;
+    text-align: right;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.shine-button {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    color: #fe6637;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.shine-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+}
+
+.shine-button:hover {
+    background: #fe6637;
+    color: white;
+}
+
+.shine-button:hover:before {
+    left: 150px;
+    transition: 0.5s ease-in-out;
+}
