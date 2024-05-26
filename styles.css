@@ -17,13 +17,50 @@ header {
 }
 
 #logo {
-    max-width: 10%; /* Уменьшаем максимальную ширину логотипа в 10 раз. Было 12% */
+    max-width: 10%;
     height: auto;
-    display: block;
     border-radius: 8px;
-    display: inline;
+    display: inline-block; /* Заменил display: inline на inline-block */
     margin: 0 50px;
+    position: relative; /* Добавил позиционирование для использования псевдоэлемента */
 }
+
+#logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Цвет тени */
+    transform: skew(-20deg); /* Угол наклона тени */
+    z-index: -1; /* Помещаем под логотипом */
+    opacity: 0; /* Изначально прозрачность 0 */
+    transition: opacity 0.3s ease; /* Анимация изменения прозрачности */
+}
+
+#logo:hover::before {
+    opacity: 1; /* При наведении прозрачность 1 */
+    transition-delay: 0.1s; /* Задержка перед анимацией */
+}
+
+/* Добавим небольшую анимацию для логотипа */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#logo:hover {
+    animation: float 0.5s ease infinite; /* Применяем анимацию при наведении */
+}
+
 
 h1 {
     margin: 0.5em 0 0.2em;
@@ -415,3 +452,63 @@ p {
 }
 
 
+
+
+
+
+
+
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.4s ease;
+    overflow: hidden; /* Добавлено для предотвращения выхода тени за границы кнопки */
+}
+
+.back-button::before {
+    content: '';
+    position: absolute;
+    bottom: -50%; /* Начальная позиция тени за пределами кнопки */
+    left: -50%; /* Начальная позиция тени за пределами кнопки */
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: rotate(-10deg);
+    transition: all 0.4s ease;
+}
+
+.back-button:hover::before {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover {
+    background: linear-gradient(to right, #e9ecef, #f8f9fa);
+    transform: scale(1.05);
+}
+
+.back-button img {
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+}
