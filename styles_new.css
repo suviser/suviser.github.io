@@ -148,6 +148,9 @@ body {
 .social-icons a:hover {
     color: #ffeb3b;
 }
+footer {
+    text-align: center;
+}
 
 /* Media Query for mobile devices */
 @media only screen and (max-width: 600px) {
@@ -175,15 +178,12 @@ body {
         transform: translateY(-5px);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
-}
-
-footer {
-    text-align: center;
-}
-
-/* Стили для черной темы */
-@media (prefers-color-scheme: dark) {
-    #logo {
-        background-color: white;
+    footer {
+        text-align: center;
+        margin-top: 0px;
+        padding-top: 0px;
     }
+    
 }
+
+
