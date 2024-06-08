@@ -178,13 +178,37 @@ section p strong {
     background: linear-gradient(to right, #7fad77, #0d6efd);
     color: #fff;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background 0.3s ease;
+    border-radius: 12px; /* Более закругленные углы для современного вида */
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Плавные переходы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем тень */
+    font-weight: bold; /* Немного увеличиваем шрифт */
+    position: relative; /* Для позиционирования псевдоэлемента */
+    overflow: hidden; /* Скрываем псевдоэлемент за пределами кнопки */
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.15); /* Полупрозрачный белый цвет */
+    transition: all 0.75s ease;
+    border-radius: 50%; /* Делаем псевдоэлемент кругом */
+    transform: translate(-50%, -50%) scale(0); /* Исходный размер - ноль */
+}
+
+.cta-button:hover::before {
+    transform: translate(-50%, -50%) scale(1); /* Увеличиваем до полного размера */
 }
 
 .cta-button:hover {
     background: linear-gradient(to right, #0d6efd, #7fad77);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более сильная тень при наведении */
+    transform: translateY(-2px); /* Немного поднимаем кнопку при наведении */
 }
+
 
 footer {
     background: linear-gradient(to right, #ffffff, #f0f0f0); /* Градиент светло-серого */
@@ -240,35 +264,44 @@ p {
 }
 
 
-  .button {
-    width: 70px; /* Ширина кнопки Было по 100 */
-    height: 70px; /* Высота кнопки */
+.button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Круглая форма */
+    background-color: #f0f0f0; /* Более приятный фоновый цвет */
+    color: black;
+    font-size: 16px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex; /* Для центрирования содержимого */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для объема */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Плавные переходы */
+    cursor: pointer;
+}
 
-    border-radius: 40%; /* Делаем круглую форму Было 50%*/
-    background-color: white; /* Цвет фона */
-    color: black; /* Цвет текста */
-    font-size: 16px; /* Размер шрифта */
-    position: fixed; /* Фиксируем позицию */
-    bottom: 10px; /* Отступ снизу */
-    right: 10px; /* Отступ справа */
-  }
-  
-  /* Стиль для анимации при наведении */
-  .button:hover {
+.button:hover {
     transform: scale(1.15); /* Увеличиваем размер */
-    transition: 0.3s; /* Длительность анимации */
-  }
-  
-  /* Стиль для стрелки вверх */
-  .arrow {
-    width: 0; /* Ширина стрелки */
-    height: 0; /* Высота стрелки */
-    border-left: 15px solid transparent; /* Левая часть стрелки */
-    border-right: 15px solid transparent; /* Правая часть стрелки */
-    border-bottom: 30px solid black; /* Нижняя часть стрелки */
-    margin: 15px auto; /* Выравнивание по центру */
-    box-shadow: 0 0 5px 2px white; /* Тень для объема */
-  }
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Более сильная тень при наведении */
+    background-color: #e0e0e0; /* Меняем фоновый цвет при наведении */
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid black;
+    box-shadow: 0 0 5px 2px white;
+    transition: border-bottom-color 0.3s ease; /* Переход цвета нижней границы */
+}
+
+.button:hover .arrow {
+    border-bottom-color: #333; /* Меняем цвет стрелки при наведении */
+}
+
 
 .role-avatar {
     max-width: 200px; /* Уменьшил максимальную ширину */
@@ -512,3 +545,108 @@ p {
     width: 20px;
     height: 20px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ffg {
+    position: relative; /* Обеспечивает правильное позиционирование дочерних элементов */
+}
+
+#ffg button {
+    background: linear-gradient(45deg, #6b6b6b, #a9a9a9);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative; /* Для правильного позиционирования теней */
+    z-index: 1; /* Для правильного наложения */
+}
+
+#ffg button:hover {
+    background: linear-gradient(45deg, #a9a9a9, #6b6b6b);
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ffg button:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Дополнительные стили для улучшения */
+#ffg button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    border-radius: inherit;
+    z-index: -1; /* Отправляем задний фон на задний план */
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Изначально без тени */
+    transition: box-shadow 0.4s ease;
+}
+
+#ffg button:hover::before {
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Стили для секций
+#container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.role-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+#fff {
+    font-size: 24px;
+    color: #333;
+}
+
+CTA button styles
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #00d4ff);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #00d4ff, #007bff);
+    transform: scale(1.05);
+}
+ */
