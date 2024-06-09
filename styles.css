@@ -650,3 +650,11 @@ CTA button styles
     transform: scale(1.05);
 }
  */
+
+
+
+ .warning {
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+  }
