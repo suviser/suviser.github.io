@@ -17,6 +17,111 @@
             }, 500); // Задержка в 3000 миллисекунд (3 секунды)
         };
     </script>
+        <style>
+/* body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+} */
+
+.section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.avatar-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    max-width: 10em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.avatar:hover {
+    transform: rotate(360deg);
+}
+
+.description {
+    font-weight: bold;
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.section ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+.section ul ul {
+    list-style-type: circle;
+}
+
+.section ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+}
+
+.cta-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none;
+}
+
+        </style>
 </head>
 
 <body>
@@ -30,20 +135,37 @@
         <p class="warning">
         Это стартап &mdash; начало большого пути! В данный момент ограничены финансовые ресурсы, но здесь полно энтузиазма и идей. Ищу энтузиастов, готовых вложить свое время и энергию в это дело!
         </p>
-
+<!-- 
         <p class="warning">
         Це стартап &mdash; початок великого шляху! Зараз обмежені фінансові ресурси, але тут повно ентузіазму та ідей. Шукаю ентузіастів, готових вкласти свій час та енергію у цю справу!
         </p>
 
         <p class="warning">
         This is a startup &mdash; the beginning of a great journey! Currently, financial resources are limited, but there is plenty of enthusiasm and ideas here. Looking for enthusiasts ready to invest their time and energy into this endeavor!
-        </p>
+        </p> -->
     </section>
     <section>
         <h2>Поиск Команды</h2>
         <p>
-            *Тут необходимо написать мотивация, что это путешествие, приключение, сказка и прочее*
+            *Тут необходимо написать мотивация, что это путешествие, приключение, сказка и прочее* Ещё написать, что роли могут пересекатся в одном человеке либо одну роль Заниматель
+            несколько людей.    </p>
+        <p>
+            Советую для начала изучить <a href="continue.html" style="color: lightskyblue;">Продолжение... (<strong>et Nota</strong>)</a>.
+            Если ты понял суть проекта и/или очень сильно заинтересован в нём и ЗНАЕШЬ (что угодно) и МОЖЕШЬ (чем угодно) помочь в его реализации, то ты подходишь.
+            А если в добавок к этому ещё и разделяешь взгляды <strong>et Human</strong> &mdash; идеально подходишь!
         </p>
+        
+<div style="border: 1px solid black; margin-bottom: 20px;">        <p style="margin-top: 10px; font-style: italic;">    
+    Некоторые моменты для уточнения:    
+    </p>
+    <ol>
+        <li>Каждая названная роль не есть фиксированной и будет уточняться.</li>
+        <li>Ни единая неназванная роль не является умышленно опущенной и/или ненужной.</li>
+        <li>Если ты можешь принести (приносишь) пользу стартапу, но не занимаешь одну из названных ролей, то это означает, что твоя роль не была названа.</li>
+        <li>Роли могут пересекаться в одном человеке.</li>
+        <li>Каждая роль может заниматься и более, чем одним человеком.</li>
+
+    </ol></div>
         <div id="ffg">
             <button onclick="toggleSection('section0')">&laquo;CTO, со-управляющий&raquo;</button>
             <button onclick="toggleSection('section1')">&laquo;Разработчик&raquo;/&laquo;IT-шник&raquo;</button>
@@ -56,107 +178,58 @@
     
     <!-- Role Sections -->
 
-    <section id="section0">  
-        <div id="container">
-            <img class="role-avatar" src="designer_avatar.jpg" alt="Designer Avatar">
-            <div>
-                <h2 id="fff">&laquo;CTO&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
+ 
+
+    <section id="section0" class="section">
+        <h2>CTO</h2>
+        <div class="avatar-container">
+            <img src="cto_2.jpg" alt="Designer Avatar" class="avatar">
+        </div>
+    
+        <p class="description">Описание: Ты визионер и техноэнтузиаст, готовый создать что-то невероятное с нуля? Ты хочешь работать в стартап-среде, где инновации сочетаются с возможностями? Присоединяйся к нам в роли Chief Technology Officer (CTO) и стань движущей силой нашего амбициозного пути!</p>
+    
+        <p  class="highlight"><strong>Как CTO, ты будешь:</strong></p>
+    
+        <ul>
+            <li><strong>Вести разработку:</strong> Руководить созданием нашего минимально жизнеспособного продукта (MVP), превращая идеи в функциональное и удобное мобильное приложение.
                 <ul>
-                    <li>Мастер креативных идей</li>
-                    <li>Опыт в UI/UX дизайне</li>
-                    <li>Умение работать в Adobe Creative Suite</li>
-                    <li>Инновационный подход к дизайну</li>
+                    <li><strong>Техническое видение:</strong> Определять функциональные требования MVP и разрабатывать техническую стратегию для их реализации.</li>
+                    <li><strong>Технологический стек:</strong> Выбирать технологические платформы и инструменты, на которых будет базироваться наш продукт.</li>
+                    <li><strong>Управление командой:</strong> Строить и управлять нашей технической командой, привлекая талантливых разработчиков.</li>
                 </ul>
-            </div>
-        </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div id="ffg">
-            <a class="cta-button" href="#">Присоединиться</a>
-        </div>
-    </section>
-
-
-
-    <section id="section1" class="hidden">  
-        <div id="container">
-            <img class="role-avatar" src="programmer_avatar.jpg" alt="Programmer Avatar">
-            <div>
-                <h2 id="fff">&laquo;Разработчик&raquo;/&laquo;IT-шник&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
-                <ul>
-                    <li>Эксперт в языках программирования</li>
-                    <li>Опыт в разработке веб-приложений</li>
-                    <li>Аналитический склад ума</li>
-                    <li>Готов к постоянному обучению и росту</li>
-                </ul>
-            </div>
-        </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div id="ffg">
-            <a class="cta-button" href="#">Присоединиться</a>
-        </div>
-    </section>
-
-
-    <section id="section2" class="hidden">  
-        <div id="container">
-            <img class="role-avatar" class="p-flex" src="marketer_avatar.jpg" alt="Marketer Avatar">
-            <div>
-                <h2 id="fff">&laquo;Маркетолог&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
-                <ul>
-                    <li>Творческий идеолог</li>
-                    <li>Опыт в digital маркетинге</li>
-                    <li>Стратегическое мышление</li>
-                    <li>Отличные коммуникативные навыки</li>
-                </ul>
-            </div>
-        </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div id="ffg">
-            <a class="cta-button" href="#">Присоединиться</a>
-        </div>
-    </section>
-
-
-
-    <section id="section3" class="hidden">  
-        <div id="container">
-            <img class="role-avatar" src="designer_avatar.jpg" alt="Designer Avatar">
-            <div>
-                <h2 id="fff">&laquo;Дизайнер&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
-                <ul>
-                    <li>Мастер креативных идей</li>
-                    <li>Опыт в UI/UX дизайне</li>
-                    <li>Умение работать в Adobe Creative Suite</li>
-                    <li>Инновационный подход к дизайну</li>
-                </ul>
-            </div>
-        </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div id="ffg">
+            </li>
+            <li><strong>Строить и масштабировать:</strong> Масштабировать продукт после запуска MVP, улучшать функциональность и обеспечивать надежную архитектуру для будущего роста.</li>
+            <li><strong>Вдохновлять и инновационно мыслить:</strong> Вносить инновационные идеи, мотивировать команду и продвигать технологические решения вперед.</li>
+            <li><strong>Сотрудничать и наставлять:</strong> Тесно сотрудничать с основателями и другими членами команды, создавать культуру сотрудничества и наставлять младших разработчиков.</li>
+        </ul>
+    
+        <p  class="highlight"><strong>Кто ты:</strong></p>
+    
+        <ul>
+            <li><strong>Технический эксперт:</strong> Глубокое понимание разработки мобильных приложений, опыт работы с различными технологиями и фреймворками.</li>
+            <li><strong>Инновационный мыслитель:</strong> Страсть к технологиям, способность превращать креативные идеи в реальность.</li>
+            <li><strong>Проблемный решатель:</strong> Умение выявлять проблемы и предлагать эффективные технические решения.</li>
+            <li><strong>Командный игрок:</strong> Готовность к сотрудничеству, отличные коммуникационные навыки и способность мотивировать команду.</li>
+        </ul>
+    
+        <p  class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+    
+        <ul>
+            <li><strong>Техническая компетентность:</strong> Опыт в разработке мобильных приложений (iOS/Android), знание кроссплатформенных решений приветствуется.</li>
+            <li><strong>Опыт в руководстве:</strong> Желание и опыт в управлении техническими командами.</li>
+            <li><strong>Стратегическое мышление:</strong> Умение адаптировать технические стратегии под бизнес-цели и обеспечивать их успешную реализацию.</li>
+        </ul>
+    
+        <p  class="highlight"><strong>Почему стоит присоединиться:</strong></p>
+    
+        <ul>
+            <li><strong>Влияние на результат:</strong> Твоя работа будет иметь прямое влияние на успех продукта и развитие компании.</li>
+            <li><strong>Инновационная среда:</strong> Возможность работать в культуре, где ценится креативность, сотрудничество и постоянное обучение.</li>
+            <li><strong>Возможность стать совладельцем:</strong> Как ранний участник команды, ты получишь возможность зарабатывать долю в компании и делиться её успехом.</li>
+            <li><strong>Гибкость и автономия:</strong> Возможность экспериментировать, внедрять инновации и влиять на технологическое будущее компании.</li>
+        </ul>
+    
+        <div class="cta-container">
             <a class="cta-button" href="#">Присоединиться</a>
         </div>
     </section>
@@ -164,27 +237,54 @@
 
 
 
-    <section id="section4" class="hidden">  
-        <div id="container">
-            <img class="role-avatar" src="designer_avatar.jpg" alt="Designer Avatar">
-            <div>
-                <h2 id="fff">&laquo;CFO, финансист&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
-                <ul>
-                    <li>Мастер креативных идей</li>
-                    <li>Опыт в UI/UX дизайне</li>
-                    <li>Умение работать в Adobe Creative Suite</li>
-                    <li>Инновационный подход к дизайну</li>
-                </ul>
-            </div>
+
+
+    <section id="section1" class="section hidden">
+        <h2>Разработчик</h2>
+        <div class="avatar-container">
+            <img src="developer_2.jpg" alt="Designer Avatar" class="avatar">
         </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <div id="ffg">
+
+        <p class="description">Описание: Ты завзятый программист, который хочет внести свой вклад в создание инновационного продукта? Ищешь динамичную среду стартапа, где твои идеи и навыки будут востребованы? Присоединяйся к команде в роли программиста и помоги воплотить в жизнь амбициозные планы!</p>
+    
+        <p   class="highlight"><strong>Как программист, ты будешь:</strong></p>
+        <ul>
+            <li><strong>Разрабатывать и внедрять:</strong> Создавать код для нашего мобильного приложения, обеспечивая его функциональность и надежность.
+                <ul>
+                    <li><strong>Фронтенд и бэкенд:</strong> Работать как с клиентской, так и с серверной частью приложения, обеспечивая их гармоничное взаимодействие.</li>
+                    <li><strong>Оптимизация и тестирование:</strong> Проводить оптимизацию кода и тестирование для обеспечения высокого качества продукта.</li>
+                    <li><strong>Интеграция с API:</strong> Реализовывать интеграции с внешними сервисами и API для расширения функционала приложения.</li>
+                </ul>
+            </li>
+            <li><strong>Сотрудничать с командой:</strong> Работать в тесном взаимодействии с дизайнером и CTO для реализации дизайна и технической стратегии.</li>
+            <li><strong>Обучаться и развиваться:</strong> Постоянно совершенствовать свои навыки и изучать новые технологии для повышения эффективности работы.</li>
+        </ul>
+    
+        <p   class="highlight"><strong>Кто ты:</strong></p>
+        <ul>
+            <li><strong>Технический эксперт:</strong> У тебя есть опыт разработки мобильных приложений и владение современными языками программирования.</li>
+            <li><strong>Проблемно-ориентированный:</strong> Ты умеешь находить и устранять проблемы в коде, обеспечивая его стабильность и производительность.</li>
+            <li><strong>Командный игрок:</strong> Ты готов работать в команде, делиться своими идеями и прислушиваться к мнению других.</li>
+            <li><strong>Желающий учиться:</strong> Ты стремишься постоянно учиться и развиваться, осваивая новые технологии и методы разработки.</li>
+        </ul>
+    
+        <p   class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+        <ul>
+            <li><strong>Опыт разработки мобильных приложений:</strong> Практический опыт разработки приложений для iOS и Android.</li>
+            <li><strong>Фулстек разработка:</strong> Знание как фронтенд, так и бэкенд технологий.</li>
+            <li><strong>Интеграция с API:</strong> Опыт работы с RESTful API и другими внешними сервисами.</li>
+            <li><strong>Инструменты разработки:</strong> Знание инструментов и методов, таких как, например, Git, CI/CD, Docker и др.</li>
+        </ul>
+    
+        <p><strong>Почему стоит присоединиться:</strong></p>
+        <ul>
+            <li><strong>Влияние на продукт:</strong> Твоя работа будет напрямую влиять на успех продукта и удовлетворенность пользователей.</li>
+            <li><strong>Инновационная среда:</strong> Присоединяйся к команде, которая ценит креативность, сотрудничество и постоянное обучение.</li>
+            <li><strong>Возможности получения доли в компании:</strong> Как ранний член команды, ты получишь шанс заработать долю и участвовать в успехе компании.</li>
+            <li><strong>Гибкость и автономия:</strong> Наслаждайся свободой экспериментировать, внедрять свои идеи и влиять на будущее наших технологий.</li>
+        </ul>
+    
+        <div class="cta-container">
             <a class="cta-button" href="#">Присоединиться</a>
         </div>
     </section>
@@ -192,29 +292,229 @@
 
 
 
-    <section id="section5" class="hidden">  
-        <div id="container">
-            <img class="role-avatar" src="designer_avatar.jpg" alt="Designer Avatar">
-            <div>
-                <h2 id="fff">&laquo;Юрист&raquo;</h2>
-                <p><strong>Характеристики:</strong></p>
-                <ul>
-                    <li>Мастер креативных идей</li>
-                    <li>Опыт в UI/UX дизайне</li>
-                    <li>Умение работать в Adobe Creative Suite</li>
-                    <li>Инновационный подход к дизайну</li>
-                </ul>
-            </div>
+
+
+
+
+    
+
+<section id="section2" class="section hidden">
+    <h2>Маркетолог (CMO)</h2>
+    <div class="avatar-container">
+        <img src="marketer.jpg" alt="Designer Avatar" class="avatar">
+    </div>
+
+        <p class="description">Описание: Ты увлеченный маркетолог, готовый помочь стартапу достичь своих амбициозных целей? Ищешь возможность работать в динамичной среде, где твои идеи могут иметь непосредственное влияние? Присоединяйся к команде в роли маркетолога и помоги продвинуть продукт на рынок!</p>
+    
+        <p class="highlight"><strong>Как маркетолог, ты будешь:</strong></p>
+        <ul>
+            <li><strong>Разрабатывать маркетинговую стратегию:</strong> Создавать и внедрять маркетинговые планы для продвижения мобильного приложения.</li>
+            <ul>
+                <li><strong>Анализ рынка:</strong> Исследовать рынок, конкурентов и целевую аудиторию для выявления возможностей и угроз.</li>
+                <li><strong>Создание контента:</strong> Разрабатывать креативные материалы и кампании для привлечения и удержания пользователей.</li>
+                <li><strong>SMM и SEO:</strong> Управлять нашими социальными медиа и оптимизировать контент для улучшения видимости в поисковых системах.</li>
+            </ul>
+            <li><strong>Сотрудничать с командой:</strong> Работать в тесном взаимодействии с дизайнером и разработчиками для согласования маркетинговых усилий с продуктовой стратегией.</li>
+            <li><strong>Измерять и анализировать:</strong> Использовать аналитику и метрики для оценки эффективности маркетинговых кампаний и внесения улучшений.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Кто ты:</strong></p>
+        <ul>
+            <li><strong>Маркетолог-новатор:</strong> Ищем творческого человека, который готов учиться и применять новые подходы в маркетинге. Опыт приветствуется, но главное — твоя готовность расти вместе с нами и делиться свежими идеями.</li>
+            <li><strong>Аналитически подкованный:</strong> Ты умеешь анализировать данные и принимать обоснованные решения на их основе.</li>
+            <li><strong>Коммуникатор:</strong> Ты умеешь четко и эффективно передавать свои идеи и концепции как внутри команды, так и для внешней аудитории.</li>
+            <li><strong>Командный игрок:</strong> Ты готов работать в команде, делиться своими идеями и прислушиваться к мнению других.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+        <ul>
+            <li><strong>Управление социальными медиа:</strong> Опыт работы с социальными медиа платформами и инструментами аналитики.</li>
+            <li><strong>SEO и контент-маркетинг:</strong> Знание лучших практик SEO и создание контента, оптимизированного для поисковых систем.</li>
+            <li><strong>Аналитические инструменты:</strong> Опыт работы с инструментами аналитики, такими как, например, Google Analytics, и использование данных для принятия решений.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Почему стоит присоединиться:</strong></p>
+        <ul>
+            <li><strong>Влияние на продукт:</strong> Твои маркетинговые усилия будут напрямую влиять на успех продукта и его позиционирование на рынке.</li>
+            <li><strong>Инновационная среда:</strong> Присоединяйся к команде, которая ценит креативность, сотрудничество и постоянное обучение.</li>
+            <li><strong>Возможности получения доли в компании:</strong> Как ранний член команды, ты получишь шанс заработать долю и участвовать в успехе компании.</li>
+            <li><strong>Гибкость и автономия:</strong> Наслаждайся свободой экспериментировать, внедрять свои идеи и влиять на будущее наших маркетинговых стратегий.</li>
+        </ul>
+    
+        <div class="cta-container">
+            <a class="cta-button" href="#">Присоединиться</a>
         </div>
-        <p><strong>Описание:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+    </section>
+    
 
 
-        <div id="ffg">
+
+
+
+
+
+
+
+
+
+
+    <section id="section3" class="section hidden">
+        <h2>Дизайнер</h2>
+        <div class="avatar-container">
+            <img src="designer.jpg" alt="Designer Avatar" class="avatar">
+        </div>
+
+        <p class="description">Описание: Ты талантливый дизайнер, стремящийся создать уникальный и запоминающийся пользовательский опыт? Ищешь возможность работать в динамичной стартап-среде, где твои идеи могут воплотиться в жизнь? Присоединяйся к команде в роли дизайнера и помоги создать продукт, который будет восхищать пользователей!</p>
+    
+        <p class="highlight"><strong>Как дизайнер, ты будешь:</strong></p>
+        <ul>
+            <li><strong>Создавать дизайн:</strong> Разрабатывать интуитивно понятные и привлекательные пользовательские интерфейсы для нашего мобильного приложения.</li>
+            <ul>
+                <li><strong>UI/UX дизайн:</strong> Проектировать интерфейсы, обеспечивающие удобство и эстетику, учитывая потребности и ожидания пользователей.</li>
+                <li><strong>Прототипирование:</strong> Создавать интерактивные прототипы для тестирования и демонстрации функционала.</li>
+                <li><strong>Визуальный дизайн:</strong> Разрабатывать визуальные элементы, такие как иконки, иллюстрации и графику, соответствующие общему стилю приложения.</li>
+            </ul>
+            <li><strong>Сотрудничать с командой:</strong> Работать в тесном сотрудничестве с разработчиками и CTO для реализации дизайна в конечном продукте.</li>
+            <li><strong>Исследовать и улучшать:</strong> Проводить исследования пользователей, собирать обратную связь и вносить улучшения в дизайн на основе данных.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Кто ты:</strong></p>
+        <ul>
+            <li><strong>Креативный профессионал:</strong> У тебя есть портфолио, демонстрирующее твой опыт и креативность в области дизайна.</li>
+            <li><strong>Пользовательски ориентированный:</strong> Ты умеешь думать с точки зрения пользователя и создавать дизайн, который отвечает их потребностям.</li>
+            <li><strong>Командный игрок:</strong> Ты готов сотрудничать с другими членами команды, делиться своими идеями и прислушиваться к их мнению.</li>
+            <li><strong>Технически подкованный:</strong> Ты знаком с современными инструментами и методами дизайна, такими как Sketch, Figma, Adobe Creative Suite и др.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+        <ul>
+            <li><strong>Опыт в UI/UX дизайне:</strong> Практический опыт разработки пользовательских интерфейсов и улучшения пользовательского опыта.</li>
+            <li><strong>Прототипирование:</strong> Умение создавать интерактивные прототипы для тестирования и презентации.</li>
+            <li><strong>Веб и мобильный дизайн:</strong> Опыт работы с дизайном для мобильных приложений и веб-платформ.</li>
+            <li><strong>Коммуникационные навыки:</strong> Способность четко и эффективно передавать свои идеи и концепции.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Почему стоит присоединиться:</strong></p>
+        <ul>
+            <li><strong>Влияние на продукт:</strong> Твой дизайн будет определять пользовательский опыт и визуальную идентичность продукта.</li>
+            <li><strong>Инновационная среда:</strong> Присоединяйся к команде, которая ценит креативность, сотрудничество и постоянное обучение.</li>
+            <li><strong>Возможности получения доли в компании:</strong> Как ранний член команды, ты получишь шанс заработать долю и участвовать в успехе компании.</li>
+            <li><strong>Гибкость и автономия:</strong> Наслаждайся свободой экспериментировать, внедрять свои идеи и влиять на будущее наших технологий.</li>
+        </ul>
+    
+        <div class="cta-container">
+            <a class="cta-button" href="#">Присоединиться</a>
+        </div>
+    </section>
+    
+
+
+    <section id="section4" class="section hidden">
+        <h2>Финансист (CFO)</h2>
+        <div class="avatar-container">
+            <img src="cfo.jpg" alt="Designer Avatar" class="avatar">
+        </div>
+
+        <p class="description">Описание: Ты подкованный финансист, готовый помочь стартапу эффективно управлять ресурсами и достигать финансовых целей? Ищешь возможность работать в динамичной среде, где твои идеи и навыки будут востребованы? Присоединяйся к нашей команде в роли CFO и помоги нам построить устойчивую финансовую основу для нашего бизнеса!</p>
+    
+        <p class="highlight"><strong>Как CFO, ты будешь:</strong></p>
+        <ul>
+            <li><strong>Управлять финансами:</strong> Разрабатывать и внедрять финансовую стратегию, управлять бюджетом и финансовыми потоками компании.</li>
+            <ul>
+                <li><strong>Бюджетирование и прогнозирование:</strong> Создавать бюджеты, прогнозировать доходы и расходы, контролировать выполнение финансовых планов.</li>
+                <li><strong>Финансовая отчетность:</strong> Подготавливать финансовые отчеты, анализировать финансовые показатели и предоставлять рекомендации по улучшению.</li>
+                <li><strong>Поиск инвестиций:</strong> Работать над привлечением инвестиций, разрабатывать инвестиционные предложения и презентации.</li>
+            </ul>
+            <li><strong>Сотрудничать с командой:</strong> Работать в тесном взаимодействии с другими руководителями и основателем для согласования финансовой стратегии с общей стратегией компании.</li>
+            <li><strong>Контролировать риски:</strong> Оценивать финансовые риски, разрабатывать стратегии их минимизации и обеспечивать соблюдение финансовых регламентов.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Кто ты:</strong></p>
+        <ul>
+            <li><strong>Финансовый эксперт:</strong> Ты владеешь компетенциями в сфере финансового управления предприятием (в том числе таким венчурным, как стартап) и имеешь продвинутое понимание финансовых механизмов.</li>
+            <li><strong>Стратегический мыслитель:</strong> Ты умеешь разрабатывать и внедрять финансовые стратегии, которые способствуют росту и развитию бизнеса.</li>
+            <li><strong>Аналитически подкованный:</strong> Ты умеешь анализировать данные и принимать обоснованные решения на их основе.</li>
+            <li><strong>Командный игрок:</strong> Ты готов работать в команде, делиться своими идеями и прислушиваться к мнению других.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+        <ul>
+            <li><strong>Талант в финансовом управлении:</strong> Исключительные способности и глубокие знания в роли финансиста, особенно ценные в IT и стартап-секторе, опыт приветствуется.</li>
+            <li><strong>Бюджетирование и прогнозирование:</strong> Продвинутые навыки в составлении бюджетов и финансовых прогнозов, а также в управлении ими.</li>
+            <li><strong>Финансовая отчетность:</strong> Глубокое понимание стандартов и методик финансовой отчетности.</li>
+            <li><strong>Привлечение инвестиций:</strong> Умение эффективно взаимодействовать с инвесторами и создавать убедительные инвестиционные предложения и презентации.</li>
+        </ul>
+        
+    
+        <p class="highlight"><strong>Почему стоит присоединиться:</strong></p>
+        <ul>
+            <li><strong>Влияние на бизнес:</strong> Твои финансовые решения будут напрямую влиять на успех компании и ее развитие.</li>
+            <li><strong>Инновационная среда:</strong> Присоединяйся к команде, которая ценит креативность, сотрудничество и постоянное обучение.</li>
+            <li><strong>Возможности получения доли в компании:</strong> Как ранний член команды, ты получишь шанс заработать долю и участвовать в успехе компании.</li>
+            <li><strong>Гибкость и автономия:</strong> Наслаждайся свободой экспериментировать, внедрять свои идеи и влиять на будущее нашей финансовой стратегии.</li>
+        </ul>
+    
+        <div class="cta-container">
+            <a class="cta-button" href="#">Присоединиться</a>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <section id="section5" class="section hidden">
+        <h2>Юрист</h2>
+        <div class="avatar-container">
+            <img src="lawyer.jpg" alt="Designer Avatar" class="avatar">
+        </div>
+
+        <p class="description">Описание: Ты опытный и/или понимающий своё дело юрист, специализирующийся на вопросах, связанных со стартапами и технологическими компаниями? Ищешь возможность влиять на правовую стратегию и обеспечивать юридическую поддержку на всех этапах развития бизнеса? Присоединяйся к нашей команде в роли юриста и помоги нам строить юридическую основу для стартапа!</p>
+    
+        <p class="highlight"><strong>Как юрист, ты будешь:</strong></p>
+        <ul>
+            <li><strong>Юридическая поддержка:</strong> Оказывать консультации по юридическим вопросам, связанным с деятельностью стартапа.</li>
+            <ul>
+                <li><strong>Составление документации:</strong> Готовить и анализировать юридические документы, включая договоры, лицензии и соглашения.</li>
+                <li><strong>Работа с интеллектуальной собственностью:</strong> Защищать права интеллектуальной собственности компании, оформлять патенты и торговые марки.</li>
+                <li><strong>Риск-менеджмент:</strong> Оценивать и управлять юридическими рисками, разрабатывать стратегии их минимизации.</li>
+            </ul>
+            <li><strong>Сотрудничать с командой:</strong> Взаимодействовать с другими членами команды для согласования бизнес- и юридических стратегий.</li>
+            <li><strong>Соблюдение законодательства:</strong> Обеспечивать соответствие деятельности компании действующему законодательству и нормативным актам.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Кто ты:</strong></p>
+        <ul>
+            <li><strong>Опытный специалист:</strong> У тебя есть опыт работы в области корпоративного и технологического права.</li>
+            <li><strong>Аналитический склад ума:</strong> Ты способен анализировать сложные юридические вопросы и предлагать практические решения.</li>
+            <li><strong>Коммуникативные навыки:</strong> Ты умеешь ясно и четко излагать свои мысли и работать в команде.</li>
+            <li><strong>Ответственность:</strong> Ты готов нести ответственность за юридические аспекты деятельности компании.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Желательные навыки и опыт:</strong></p>
+        <ul>
+            <li><strong>Специализация в технологическом праве:</strong> Знание особенностей юридического регулирования в IT-сфере.</li>
+            <li><strong>Опыт работы со стартапами:</strong> Понимание специфики юридического обеспечения стартап-проектов.</li>
+            <li><strong>Опыт в интеллектуальной собственности:</strong> Знание процедур регистрации и защиты прав интеллектуальной собственности.</li>
+        </ul>
+    
+        <p class="highlight"><strong>Почему стоит присоединиться:</strong></p>
+        <ul>
+            <li><strong>Значимость роли:</strong> Твоя работа будет иметь важное значение для защиты интересов компании и обеспечения ее юридической устойчивости.</li>
+            <li><strong>Развитие профессиональных навыков:</strong> Участвуй в развитии высокотехнологичной среды, где каждый день приносит новые юридические вызовы.</li>
+            <li><strong>Возможности для карьерного роста:</strong> Как часть молодой и амбициозной команды, ты сможешь активно влиять на будущее компании и свою карьеру.</li>
+            <li><strong>Гибкость и автономия:</strong> Наслаждайся свободой внедрять свои идеи, разрабатывать юридические стратегии и влиять на развитие бизнеса.</li>
+        </ul>
+    
+        <div class="cta-container">
             <a class="cta-button" href="#">Присоединиться</a>
         </div>
     </section>
@@ -222,18 +522,14 @@
 
 
 
+
+
+
+
+
+
+
     <script src="team.js"></script>
-
-    <section>
-        <h2>Разработка</h2>
-        <p>
-            *Тут будет информация про разработку, типа что разрабатывать, что в целом делать, оно будет связано с ролями. Такая инфа есть на старом сайте, но нужно, пнятно, улучшить.*
-        </p>
-    </section>
-
-
-
-
 
 
     <div id="footer-placeholder"></div>
