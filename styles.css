@@ -360,7 +360,7 @@ p {
         margin-right: 0em;
     }
 
-    nav a, span {
+    nav a, span, li {
         padding: 0.3em 0.5em;
         margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
         font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
