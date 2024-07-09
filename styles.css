@@ -351,13 +351,14 @@ p {
 
     #logo {
         max-width: 30%;
+        max-width: 1%;
     }
 
     nav {
-        padding-left: 0em;
-        padding-right: 0em;
-        margin-left: 0em;
-        margin-right: 0em;
+        padding-left: -0.5em;
+        padding-right: -0.5em;
+        margin-left: -0.5em;
+        margin-right: -0.5em;
     }
     nav li {
         padding-left: 0em;
