@@ -355,10 +355,11 @@ p {
     }
 
     nav {
-        padding-left: -0.5em;
-        padding-right: -0.5em;
-        margin-left: -0.5em;
-        margin-right: -0.5em;
+        font-size: large;
+        padding-left: 0em;
+        padding-right: 0em;
+        margin-left: 0em;
+        margin-right: 0em;
     }
     nav li {
         padding-left: 0em;
