@@ -64,8 +64,6 @@ header {
 
 h1 {
     margin: 0.5em 0 0.2em;
-    /* font-size: xx-large; */
-    /* font-size: ; */
 }
 
 nav {
@@ -74,13 +72,12 @@ nav {
     text-align: center;
     /* background-color: transparent; */
     background: none;
-    font-size: larger;
 }
 
 nav a, span {
     color: #000; /* Сделали цвет текста в навигации черным */
     text-decoration: none;
-    padding: 0.5em 0.5em;  /* Второе раздвигает текст. Было 0.5em 1em */
+    padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
     margin: 0 1em;
     border-radius: 4px; /*Было 8*/
     transition: background-color 0.3s ease;
@@ -254,7 +251,6 @@ p {
 #ppf {
     text-indent: 0px;
     margin-top: auto;
-    font-size: larger;
 }
 
 #ebsp {
@@ -351,30 +347,19 @@ p {
 
     #logo {
         max-width: 30%;
-        max-width: 1%;
     }
 
     nav {
-        font-size: large;
         padding-left: 0em;
         padding-right: 0em;
         margin-left: 0em;
         margin-right: 0em;
     }
-    nav li {
-        padding-left: 0em;
-        padding-right: 0em;
-        margin-left: 0em;
-        margin-right: 0em;
-    }
+
     nav a, span {
         padding: 0.3em 0.5em;
         margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
         font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
-        padding-left: 0em;
-        padding-right: 0em;
-        margin-left: 0em;
-        margin-right: 0em;
     }
 
     section {
@@ -673,4 +658,17 @@ CTA button styles
     text-decoration: underline;
     color: red;
     font-size: larger;
+  }
+
+
+  @media screen and (min-width: 800px) {
+    #ppf {
+        font-size: larger;
+    }
+    nav {
+        font-size: larger;
+    }
+    nav a, span {
+        padding: 0.5em 0.5em;  /* Второе раздвигает текст. Было 0.5em 1em */ 
+    }
   }
