@@ -64,6 +64,8 @@ header {
 
 h1 {
     margin: 0.5em 0 0.2em;
+    /* font-size: xx-large; */
+    /* font-size: ; */
 }
 
 nav {
@@ -72,12 +74,13 @@ nav {
     text-align: center;
     /* background-color: transparent; */
     background: none;
+    font-size: larger;
 }
 
 nav a, span {
     color: #000; /* Сделали цвет текста в навигации черным */
     text-decoration: none;
-    padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
+    padding: 0.5em 0.5em;  /* Второе раздвигает текст. Было 0.5em 1em */
     margin: 0 1em;
     border-radius: 4px; /*Было 8*/
     transition: background-color 0.3s ease;
@@ -251,6 +254,7 @@ p {
 #ppf {
     text-indent: 0px;
     margin-top: auto;
+    font-size: larger;
 }
 
 #ebsp {
