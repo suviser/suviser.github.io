@@ -712,3 +712,13 @@ nav ul ul li a:hover {
 
 
 
+#SPAN {
+    color: #000; /* Сделали цвет текста в навигации черным */
+    text-decoration: none;
+    padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
+    margin: 0 1em;
+    border-radius: 4px; /*Было 8*/
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    
+}
