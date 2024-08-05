@@ -74,7 +74,7 @@ nav {
     background: none;
 }
 
-nav a, span {
+nav a {
     color: #000; /* Сделали цвет текста в навигации черным */
     text-decoration: none;
     padding: 0.5em 1em;  /* Второе раздвигает текст. Было 0.5em 1em */
@@ -82,8 +82,11 @@ nav a, span {
     border-radius: 4px; /*Было 8*/
     transition: background-color 0.3s ease;
     display: inline-block;
-     /*border: 1px solid #ddd; Добавили белую рамку ВАЖНО! */
+     border: 1px solid #ddd;
+     padding: 100%;
+     margin: 0%;
     /* background-color: transparent; */
+    
 }
 
 nav a:hover {
@@ -101,6 +104,7 @@ nav ul {
     display: flex;
     justify-content: center;
     border: 1px solid #aeaeae;
+    
 } 
 /* ВОТ ЗДЕСЬ В НАВУЛ НУЖНО КРУТИТЬ ВЕРТЕТЬ И ВСЁ БУДЕТ ЗАЕБИСЬ! */
 
@@ -110,6 +114,9 @@ nav li {
     padding: 0;
     display: inline-block;
     /* background-color: transparent; */
+    /* border: 1px solid #000; */
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 
@@ -121,6 +128,7 @@ nav ul ul {
     background: linear-gradient(to right, #ffffff, #f0f0f0); /* Градиент светло-серого */
     border-radius: 0 0 8px 8px;
     /* background-color: transparent; */
+    /* border: 1px solid #000 */
 }
 
 
@@ -356,10 +364,19 @@ p {
         margin-right: 0em;
     }
 
-    nav a, span {
+    nav a {
         padding: 0.3em 0.5em;
         margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
         font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
+        /* padding: 0px;
+        margin: 0px;
+    } */
+        border: none;
+        background: linear-gradient(to bottom right, #eaeaea89, #ffffff);        
+    }
+    nav li {
+        padding: 0px;
+        margin: 0px;
     }
 
     section {
@@ -672,3 +689,26 @@ CTA button styles
         padding: 0.5em 0.5em;  /* Второе раздвигает текст. Было 0.5em 1em */ 
     }
   }
+
+
+
+
+
+
+nav a:hover {
+    background-color: #cdf8ff; /* Светло-серый фон при наведении */
+    transform: translateY(-4px); /* Небольшой подъем при наведении */
+}
+
+
+nav li:hover > ul {
+    display: block; /* Показ выпадающего меню при наведении */
+}
+
+
+nav ul ul li a:hover {
+    background-color: #cdf8ff; /* Светло-серый фон при наведении */
+}
+
+
+
