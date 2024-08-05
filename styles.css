@@ -368,11 +368,9 @@ p {
         padding: 0.3em 0.5em;
         margin: 0 0.2em; /* Уменьшено значение margin для ссылок в навигации */
         font-size: 0.8em; /* Уменьшен размер шрифта для ссылок в навигации */
-        /* padding: 0px;
-        margin: 0px;
-    } */
         border: none;
-        background: linear-gradient(to bottom right, #eaeaea89, #ffffff);        
+        background: linear-gradient(to bottom right, #eaeaea89, #ffffff);  
+        text-align: center;      
     }
     nav li {
         padding: 0px;
