@@ -724,6 +724,12 @@ nav ul ul li a:hover {
 
 
 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
 .language-switcher {
     position: absolute;
     top: 10px;
@@ -769,61 +775,4 @@ nav ul ul li a:hover {
 
 .language-dropdown a:hover {
     background-color: #f1f1f1;
-}
-
-
-
-
-
-
-
-
-
-
-.language-switcher {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.language-button {
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-
-.language-button:hover {
-    background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-    transform: translateY(-2px);
-}
-
-.language-dropdown {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: white;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-}
-
-.language-dropdown a {
-    color: black;
-    padding: 12px 20px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease, padding-left 0.3s ease;
-}
-
-.language-dropdown a:hover {
-    background-color: #f1f1f1;
-    padding-left: 25px;
 }
