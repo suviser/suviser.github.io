@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бизнес-Компания</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #1c1c1c;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.3), transparent 70%);
+            transform: translateX(-50%);
+            animation: pulse 5s infinite;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: bold;
+            z-index: 1;
+            position: relative;
+        }
+        header p {
+            font-size: 1.5em;
+            z-index: 1;
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        nav a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: #fff;
+            transition: width 0.3s ease, left 0.3s ease;
+        }
+        nav a:hover::before {
+            width: 100%;
+            left: 0;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 60px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease forwards;
+        }
+        .section h2 {
+            margin-top: 0;
+            font-size: 2.5em;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .section p, .section ul {
+            line-height: 1.8;
+            color: #ccc;
+        }
+        .section ul {
+            padding-left: 20px;
+        }
+        .team img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+            border: 3px solid #fff;
+        }
+        .team-member {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            animation: slideInLeft 1s ease forwards;
+        }
+        .team-member:nth-child(odd) {
+            animation: slideInRight 1s ease forwards;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #1e3c72;
+            color: #fff;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1) translateX(-50%);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1.5) translateX(-50%);
+                opacity: 0;
+            }
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideInLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Бизнес-Компания</h1>
+        <p>Ваш надежный партнер в бизнесе</p>
+    </header>
+
+    <nav>
+        <a href="#about">О компании</a>
+        <a href="#services">Услуги</a>
+        <a href="#team">Команда</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="section">
+            <h2>О компании</h2>
+            <p>Бизнес-Компания — ведущий поставщик решений в области бизнес-консалтинга и стратегического планирования. Мы помогаем нашим клиентам достигать успеха, предлагая комплексные и инновационные решения, адаптированные под их уникальные потребности.</p>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Услуги</h2>
+            <p>Мы предлагаем широкий спектр услуг для бизнеса:</p>
+            <ul>
+                <li>Бизнес-консалтинг</li>
+                <li>Стратегическое планирование</li>
+                <li>Маркетинговые исследования</li>
+                <li>Анализ рынка и конкурентов</li>
+                <li>Оптимизация бизнес-процессов</li>
+            </ul>
+        </section>
+
+        <section id="team" class="section team">
+            <h2>Наша команда</h2>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <div>
+                    <h3>Александр Петров</h3>
+                    <p>Генеральный директор</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <div>
+                    <h3>Мария Смирнова</h3>
+                    <p>Директор по маркетингу</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Team Member">
+                <div>
+                    <h3>Иван Кузнецов</h3>
+                    <p>Финансовый директор</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Контакты</h2>
+            <p>Свяжитесь с нами для получения дополнительной информации или консультации:</p>
+            <p>Email: info@business-company.com</p>
+            <p>Телефон: +7 123 456 7890</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Бизнес-Компания. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
