@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>et Nota</title>
+
+
+ <script>
+    function toggleIframe() {
+      var x = document.getElementById("iframeSection");
+      var buttonText = document.getElementById("centered-button");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        buttonText.textContent = "Скрыть таблицу";
+      } else {
+        x.style.display = "none";
+        buttonText.textContent = "Показать таблицу";
+      }
+    }
+    </script>
+      
+      <style>
+        #iframeSection {
+        display: none;
+        }
+        #centered-button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: white;
+        background-color: #0078D7;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        
+        /* Анимация */
+        transition: all 0.5s ease;
+        }
+
+        #centered-button.active {
+        background-color: #0078D7;
+        color: white;
+        /* Добавьте сюда анимацию при нажатии */
+        box-shadow: 0 0 5px #0078D7;
+        }
+
+        #centered-button:hover {
+        /* Добавьте сюда анимацию при наведении */
+        background-color: #005fa7;
+        }
+
+        #centered-button.inactive {
+        background-color: #ccc;
+        color: black;
+        }
+    @media only screen and (max-width: 600px) {
+    header {
+        padding: 1em 0;
+    }
+
+    #logo {
+        max-width: 20%;
+        margin: 0 20px;
+    }
+  }
+      </style>
+    <script>
+      window.onload = function() {
+          setTimeout(function() {
+              window.scrollTo(0, 0); // Прокрутить до верха страницы
+          }, 500); // Задержка в 3000 миллисекунд (3 секунды)
+      };
+  </script>
+</head>
+
+<body>
+
+  <div class="language-switcher">
+    <button class="language-button">Language</button>
+    <div class="language-dropdown">
+        <a href="continue_ua.html" title="Українська мова">UA</a>
+        <a href="continue.html" title="Русский язык">RU</a>
+        <a href="continue_en.html" title="English">EN</a> 
+    </div>
+</div>
+
+<script src="script_L.js"></script>
+
+
+<div id="nav-placeholder"></div>
+<script src="navigation_copy_en.js"></script>
+
+
+<section>
+    <h2 style="padding-bottom: 0; margin-bottom: 0;">et Nota</h2>
+    <h4 style="padding-top: 0; margin-top: 0; text-align: center;">(or former &laquo;Interesting Notepad&raquo; &mdash; Noter)</h4>
+    <p>
+        <strong>et Nota</strong> &mdash; is an innovative note-taking application that 
+        <strong>looks like a chat,</strong>
+        and features an advanced and equally innovative navigation system for notes. This is a revolution!
+        It’s the fastest and most convenient way to create notes and navigate through them, with a simple and intuitive
+        interface based on the principle of &laquo;Everything in one place!&raquo;. An atmospheric design with customization options that fully adapts to
+        the preferences and desires of the user.
+    </p>
+    <p>
+        <strong><i>Well, that is, it’s what it could be like if maybe you 
+          join my team. You are invited!</i></strong>
+        (advertisement) &mdash; &laquo;<a href="team_en.html" style="color: limegreen;">
+          Team &mdash; Search</a>&raquo;
+    </p>
+
+    <div class="quote-container">
+        <blockquote>
+            <p>
+                &laquo;We offer an innovative tool: a note-taking app in the form of a chat with
+                <strong>an advanced navigation system</strong>.
+                Our solution simplifies your actions, helps you manage thoughts, and enjoy the thinking process.
+                With the use of AI and advanced technologies, we provide <strong>the fastest</strong> and
+                <strong>most convenient</strong> way to create notes
+                and navigate through them, making your life and work easier.
+            </p>
+
+            <p>
+                <strong><i>et Nota &mdash; your &laquo;home for thoughts, worries, and feelings&raquo; where notes come to life.</i></strong>&raquo;
+            </p>
+        </blockquote>
+
+        <p class="quote-author">&mdash; et Human</p>
+
+    </div>
+    <!-- <br> -->
+    <h3>The goal and purpose of et Nota</h3>
+    <p>In the documentation, there is enough description of the goals, missions, visions, etc., of et Nota, 
+        but in general, due to the existence of the so-called &laquo;Main Problem&raquo;, the main goal of et Nota &mdash; <strong>
+        to replace all existing note-taking applications</strong>. To completely rewrite this field, 
+        handing over those areas (let's say Evernote),
+        that these "note-taking apps" actually occupy.</p>
+
+    <h3>A bit of history...</h3>
+    <ul>
+        <li><strong>2022:</strong>
+            <ul>
+                <li style="margin-bottom: 10px;">
+                    This project is already over a year old; in fact, it was conceived in the summer of 2022.
+                </li>
+                <li style="margin-bottom: 10px;">
+                    I would also like to <strong>point out</strong> that in September 2022 (i.e., after my app was conceived)
+                    the project <a href="https://play.google.com/store/apps/details?id=com.makenotetoself">NTS</a> appeared,
+                    which positions itself as a note-taker in the form of a chat. There is much to say about it, but I believe it was just a coincidence.
+                    Some might find it sad, but for me, it's the happiest news: <strong>the idea works!</strong>
+                </li>
+            </ul>
+        </li>
+
+        <li><strong>2023:</strong>
+            <ul>
+                <li style="margin-bottom: 10px;">
+                    In the winter of 2023,
+                    I tried to find a team (through an <a href="https://noter.tilda.ws/">old website</a>)
+                    but was unsuccessful. I believe this was due to my project being very poorly processed,
+                    as well as the "advertisement."
+                </li>
+                <li style="margin-bottom: 10px;">
+                    I applied to various accelerators but did not pass. 
+                    Again, due to poor processing (it was undercooked).
+                </li>
+
+                <li style="margin-bottom: 10px;">
+                    But at the end of summer 2023, I applied to the national accelerator 
+                    <a href="http://https://www.vlasneua.com/">Vlasne</a>, <strong>and I got in!</strong> There, I underwent business training, learned a lot about sales, marketing, finance, and so on. During the training, I ranked 
+                    <strong>72nd in knowledge level out of 1000</strong> plus people who advanced further. 
+                    Unfortunately, I didn’t get funding, but I became a <strong>member of the Diia club</strong>.
+                </li>
+            </ul>
+        </li>
+
+        <li><strong>2024:</strong>
+            <ul>
+                <li>
+                    And now I’m here in 2024, where I am again trying to find a team after such a successful event at Vlasne.
+                </li>
+                <li>
+                    Additionally, I registered the company <strong>LLC "et Human"</strong> in February 2024.                
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+</section>
+<section>
+    <h2>And still: what is et Nota?</h2>
+    <p>
+        Imagine that suddenly you need to write something down. Where will you reach first? Depending on the situation and the person, the options 
+        may vary: in a note-taking app on the phone (there are many), take a piece of paper and a pen, a notebook and a pen, I have a notepad, 
+        jot it down in a notebook or in Word, etc.
+    </p>
+    <p>
+        If you need to jot down not only text, then a simple notepad won’t suffice; you need a place to store a photo, a file, a contact,
+        and more.
+    </p>
+
+    <p>
+        What if suddenly you need to note an idea, but there’s no place to write it down, or there is, but honestly, you’re too lazy to get to it, and you tell yourself:
+        I’ll remember it; when I need to, I’ll recall it. And you don’t remember... In such moments, you realize that you need a place for notes,
+        but not just for writing; it should be as convenient, fast, beautiful, even lazy, etc., and also so that you can find that note later. Some of us keep notes in different notebooks; a ton of files accumulates there, in which, unfortunately, it seems impossible to find anything.
+    </p>
+    <p>
+        To solve all problems with a plus (+), et Nota was created. Its chat-like interface allows you to, &mdash; fueled by imagination &mdash;
+        eliminate them. Quickly, conveniently, pleasantly, atmospherically. Exactly when you have a certain need in the field of note-taking, that’s when 
+        you find yourself with et Nota in hand and, secondly, with some specific function of it, where you won’t find anything unnecessary, just 
+        what is useful in this domain.
+    </p>
+    <p>
+        In general, <strong>on one hand</strong>, we have a very fast opportunity, literally instantly, to create notes with text, photos, videos, audio, drawings, and
+        other formats, which will be conveniently converted and formatted for perfect perception. Audio to text, photo to text, and similar 
+        capabilities will save a ton of time. Automatic formatting of links, numbers, emails, and others in the text. Automatic, like RSS,
+        transformation of links for convenient and quick viewing both within and when opening the link. And a lot, a lot, a lot, a lot, a lot, a lot, a lot of other features!
+    </p>
+    <p>
+        <strong>On the other hand</strong>, we have a very fast way to navigate through these note-messages using a navigation system that includes:
+        patterned formatting and search, calendar search, filtered search, smart search, and more.
+    </p>
+    <p>
+        <strong>From yet another perspective</strong>, there’s the possibility to create various types of "reminders," which complement navigation, such as notifications and their pinning
+        in the message line, or widgets. For example: sticky notes, reminder messages, like in various to-do apps.
+    </p>
+    <p>
+        And all of this is in one place of one application without unnecessary functionality and transitions. It’s a place that can be used for note-taking as well as for creativity,
+        and even for managing tasks. You can keep a diary in et Nota, and you can even conduct research. It’s like a "phone" in your phone, a modern notebook with a pen that truly
+        performs its functions. Write down to-do lists, set alarms, record dreams, jot down ideas, lectures, and more.
+    </p>
+    <p>
+        And we don’t provide an "assembler" and say: it can be used however you like, only your imagination is the limit. No! It’s clear how 
+        absurd that is! That’s how "note-taking apps," like Evernote, operate. We provide only what is necessary for a person in their note-taking
+        activities, without any extra clutter, to continue adhering to the principle of maximum speed and convenience.
+    </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <h2>Documentation</h2>
+    <p>
+        Here, this innovative project et Nota is discussed in detail from various angles. 
+        As an option, you can take a look at the old website <a href="https://noter.tilda.ws/">Interesting Notepad, Noter</a>.
+    </p>
+
+    <p>If you're interested, you can go to the contact page <a href="about-me_en.html">About Me + Contacts</a>. If you want to join the team, go to &laquo;<a href="team_en.html" style="color: limegreen;">Team &mdash; Search</a>&raquo;. 
+        Feel free to share any of your thoughts with me, fill out the forms, 
+        if you want to join the team, etc. <strong>I will be grateful for any of your support, thank you!</strong>
+    </p>
+
+    <h3>Business Model</h3>
+    <p>The business model (canvas) for the project <strong>et Nota</strong> is described below.</p>
+    <section style="display: flex; justify-content: center;">
+        <iframe src="et_nota.ru.en.pdf" frameborder="0" width="100%" height="600"></iframe>
+    </section>
+    <a href="et_nota.ru.en.pdf" class="shine-button">Download Business Model</a>
+    <a href="et_nota.pdf" class="shine-button">Download Business Model in Russian</a>
+    <br>
+    <hr>
+
+    <h3>Business Plan Presentation</h3>
+    <p>The business plan presentation for the project <strong>et Nota</strong> is described below.</p>
+    <section style="display: flex; justify-content: center;">
+        <iframe src="nota_presentation.uk.en.pdf" frameborder="0" width="100%" height="600"></iframe>
+    </section>
+    <a href="nota_presentation.uk.en.pdf" class="shine-button">Download Presentation</a>
+    <a href="nota_presentation.uk.ru.pdf" class="shine-button">Download Presentation in Russian</a>
+    <a href="nota_presentation.pdf" class="shine-button">Download Presentation in Ukranian (original)</a>
+
+    <br>
+    <hr>
+
+    <h3>Business Plan</h3>
+    <p>
+        The business plan for the project <strong>et Nota</strong> is described below. 
+        In general, I would estimate $300,000 to cover all possible accounting and deficiencies, 
+        which can be seen in the financial plan below.
+    </p>
+    <section style="display: flex; justify-content: center;">
+        <iframe src="business_plan_et_Nota_et_Human_P.V.S..ru.en.pdf" frameborder="0" width="100%" height="600"></iframe>
+    </section>
+    <a href="business_plan_et_Nota_et_Human_P.V.S..ru.en.pdf" class="shine-button">Download Business Plan</a>
+    <a href="business_plan_et_Nota_et_Human_P.V.S..pdf" class="shine-button">Download Business Plan in Russian</a>
+    <br>
+    <hr>
+
+
+
+
+
+
+
+    <h3>Financial Plan</h3>
+    <p>Below is the financial plan for the project <strong>et Nota</strong> from Q3 (Q2) 2024 to Q2 2025.</p>
+    <button id="centered-button" onclick="toggleIframe()">Show Table</button>
+    <section id="iframeSection" style="display: none;">
+    
+
+            <iframe src="https://1drv.ms/x/s!Aktqq-I8y6KU7CqJ84BfooqqFJmu?e=Dlwgyg" frameborder="0" width="100%" height="600"></iframe>
+          </section>
+
+    </section>
+
+
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+    <button class="button" onclick="window.location.href = '#'">
+    <div class="arrow"></div>
+
+</body>
+</html>

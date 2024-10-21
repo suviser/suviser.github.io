@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Su(per)visor's Blog</title>
+    <link rel="stylesheet" href="styles_new.css">
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0); // Scroll to the top of the page
+            }, 500); // Delay of 500 milliseconds (0.5 seconds)
+        };
+    </script>
+</head>
+<body>
+
+    <div class="language-switcher">
+        <button class="language-button">Language</button>
+        <div class="language-dropdown">
+            <a href="index_ua.html" title="Українська мова">UA</a>
+            <a href="index.html" title="Русский язык">RU</a>
+            <a href="index_en.html" title="English">EN</a> 
+        </div>
+    </div>
+
+    <script src="script_L.js"></script>
+
+    <div class="main-sections">
+        <div class="section self-development" onclick="location.href='link'">
+            <div class="image-container" style="background-image: url('ego.png');"></div>
+            <div class="content">
+                <h2 style="margin-top: auto;">Ego</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+
+        <div class="section business" onclick="location.href='index_business_en.html'">
+            <div class="image-container" style="background-image: url('your_logo_image_url.png');" id="logo"></div>
+            <div class="content">
+                <h2 style="margin-top: auto;">et Human</h2>
+                <p>Here you will learn everything about my business projects, business thoughts, and other business-related topics.</p>
+            </div>
+        </div>
+    
+        <div class="section economics" onclick="location.href='link'">
+            <div class="image-container" style="background-image: url('supertechogen.png');"></div>
+            <div class="content">
+                <h2 style="margin-top: auto;">Hypertechnogenic</h2>
+                <p>Lorem ipsum dolor sit amet, consecte in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="footer.js"></script>
+
+    <!-- 
+    <div class="contact-section">
+        <h2>Contacts</h2>
+        <p>Email: suviser427@gmail.com</p>
+        <p>Phone: +38 (095) 113 50 66</p>
+        <div class="social-icons">
+            <a href="" target="_blank">Facebook</a>
+            <a href="" target="_blank">Instagram</a>
+            <a href="" target="_blank">Telegram</a>
+        </div>
+    </div> 
+    -->
+</body>
+</html>

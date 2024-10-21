@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Team Search</title>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 0); // Scroll to the top of the page
+            }, 500); // Delay of 500 milliseconds (0.5 seconds)
+        };
+    </script>
+    <style>
+        .section {
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            text-align: center;
+            color: #0056b3;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .avatar-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .avatar {
+            max-width: 10em;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+            margin-bottom: -30px;
+        }
+
+        .avatar:hover {
+            transform: rotate(360deg);
+        }
+
+        .description {
+            font-weight: bold;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            margin-bottom: 20px;
+        }
+
+        .section ul ul {
+            list-style-type: circle;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #007bff;
+            margin: 20px 0;
+            padding: 10px 0;
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+        }
+
+        .cta-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.4);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="language-switcher">
+        <button class="language-button">Language</button>
+        <div class="language-dropdown">
+            <a href="team_ua.html" title="Українська мова">UA</a>
+            <a href="team.html" title="Русский язык">RU</a>
+            <a href="team_en.html" title="English">EN</a> 
+        </div>
+    </div>
+
+    <script src="script_L.js"></script>
+    <div id="nav-placeholder"></div>
+    <script src="navigation_en.js"></script>
+
+    <section>
+        <h2>Warning &mdash; Warning!</h2>
+        <h3></h3>
+        <p class="warning">
+            This is a startup &mdash; the beginning of a great journey! Currently, financial resources are limited, but there is plenty of enthusiasm and ideas here. Looking for enthusiasts ready to invest their time and energy into this endeavor!
+        </p>
+    </section>
+    <section>
+        <h2>Team Search</h2>
+        <p>
+            As you understand, a team is necessary, a team that can achieve everything. 
+            Implementing <strong>et Nota</strong> can be done even with the laziest efforts, but 
+            with adequate resources, it can be achieved in less than 1 year, or even in 1-2 quarters. The profits, despite their 
+            underestimation in documents, will be colossal, which is obvious when talking about 
+            technological projects.
+            Life &mdash; is work, even a startup &mdash; is work (if you happen to 
+            think otherwise)... And it is a unique job, which is not given to everyone, but it is worth it for everyone who participates in it. But it is undoubtedly an adventure, albeit a dangerous one, that 
+            will bring unforgettable memories.
+        </p>
+        <p>
+            I recommend starting with studying <a href="continue_en.html" style="color: lightskyblue;">Continue... (<strong>et Nota</strong>)</a>.
+            If you understood the essence of the project and/or are very interested in it and KNOW (anything) and CAN (anything) help in its implementation, then you fit.
+            And if, in addition to this, you share the views of <strong>et Human</strong> &mdash; you are an ideal fit!
+        </p>
+
+        <div style="border: 1px solid black; margin-bottom: 20px;">
+            <p style="margin-top: 10px; font-style: italic;">    
+                Some points for clarification:    
+            </p>
+            <ol>
+                <li>Each named role is not fixed and will be clarified.</li>
+                <li>No unnamed role is intentionally omitted and/or unnecessary.</li>
+                <li>If you can bring (do bring) benefits to the startup but do not occupy any of the named roles, it means that your role has not been named.</li>
+                <li>Roles can overlap in one person.</li>
+                <li>Each role can be performed by more than one person.</li>
+            </ol>
+        </div>
+        
+        <div id="ffg">
+            <button onclick="toggleSection('section0')">CTO, Co-leader</button>
+            <button onclick="toggleSection('section1')">Developer/IT Specialist</button>
+            <button onclick="toggleSection('section2')">Marketer</button>
+            <button onclick="toggleSection('section3')">Designer</button>
+            <button onclick="toggleSection('section4')">CFO, Financier</button>
+            <button onclick="toggleSection('section5')">Lawyer</button>
+            <button onclick="toggleSection('section6')" class="cta-button" style="background: linear-gradient(to right, #7fad77, #0d6efd);">Join</button>
+        </div>
+
+        <!-- Role Sections -->
+
+
+        <section id="section0" class="section">
+            <h2>CTO</h2>
+            <div class="avatar-container">
+                <img src="cto_2.jpg" alt="CTO Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description: </strong></p>
+            <p class="description">Are you a visionary and tech enthusiast ready to create something incredible from scratch? 
+                Do you want to work in a startup environment where innovation meets opportunity? 
+                Join us as the Chief Technology Officer (CTO) and become the driving force behind our ambitious journey!</p>
+        
+            <p class="highlight"><strong>As CTO, you will:</strong></p>
+        
+            <ul>
+                <li><strong>Lead development:</strong> Manage the creation of our minimum viable product (MVP), turning ideas into a functional and user-friendly mobile application.
+                    <ul>
+                        <li><strong>Technical vision:</strong> Define the functional requirements of the MVP and develop a technical strategy for their implementation.</li>
+                        <li><strong>Technology stack:</strong> Select the technological platforms and tools on which our product will be based.</li>
+                        <li><strong>Team management:</strong> Build and manage our technical team, attracting talented developers.</li>
+                    </ul>
+                </li>
+                <li><strong>Build and scale:</strong> Scale the product after the MVP launch, improving functionality and ensuring a robust architecture for future growth.</li>
+                <li><strong>Inspire and innovate:</strong> Bring innovative ideas, motivate the team, and drive technological solutions forward.</li>
+                <li><strong>Collaborate and mentor:</strong> Work closely with founders and other team members, creating a culture of collaboration and mentoring junior developers.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Who you are:</strong></p>
+        
+            <ul>
+                <li><strong>Technical expert:</strong> Deep understanding of mobile app development, experience with various technologies and frameworks.</li>
+                <li><strong>Innovative thinker:</strong> Passion for technology, ability to turn creative ideas into reality.</li>
+                <li><strong>Problem solver:</strong> Skill in identifying issues and proposing effective technical solutions.</li>
+                <li><strong>Team player:</strong> Willingness to collaborate, excellent communication skills, and ability to motivate the team.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            
+            <ul>
+                <li><strong>Technical competence:</strong> Experience in mobile app development (iOS/Android), knowledge of cross-platform solutions is a plus.</li>
+                <li><strong>Leadership experience:</strong> Willingness and experience in managing technical teams.</li>
+                <li><strong>Strategic thinking:</strong> Ability to align technical strategies with business goals and ensure their successful execution.</li>
+                <li><strong>Artificial Intelligence:</strong> Successful experience implementing AI technologies in mobile applications, including machine and deep learning.</li>
+                <li><strong>Big Data:</strong> Professional skills in working with big data, its analysis and processing. Experience using platforms for storing and analyzing big data.</li>
+                <li><strong>Security:</strong> Deep understanding and practical experience in ensuring security in mobile applications, including user data protection and privacy compliance.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Why join us:</strong></p>
+            
+            <ul>
+                <li><strong>Impact on outcomes:</strong> Your work will have a direct impact on the success of the product and the development of the company.</li>
+                <li><strong>Innovative environment:</strong> Opportunity to work in a culture where creativity, collaboration, and continuous learning are valued.</li>
+                <li><strong>Opportunity to become a co-owner:</strong> As an early team member, you will have the chance to earn a stake in the company and share in its success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Opportunity to experiment, innovate, and influence the technological future of the company.</li>
+            </ul>
+            
+            <div class="cta-container">
+            
+            </div>
+        </section>
+        
+        <section id="section1" class="section hidden">
+            <h2>Developer</h2>
+            <div class="avatar-container">
+                <img src="developer_2.jpg" alt="Developer Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description: </strong></p>
+            <p class="description">Are you an enthusiastic programmer looking to contribute to the creation of an innovative product? 
+                Looking for a dynamic startup environment where your ideas and skills will be valued? 
+                Join the team as a developer and help bring ambitious plans to life!</p>
+            
+            <p class="highlight"><strong>As a developer, you will:</strong></p>
+            <ul>
+                <li><strong>Develop and implement:</strong> Create code for our mobile application, ensuring its functionality and reliability.
+                    <ul>
+                        <li><strong>Frontend and backend:</strong> Work with both the client-side and server-side of the application, ensuring their harmonious interaction.</li>
+                        <li><strong>Optimization and testing:</strong> Conduct code optimization and testing to ensure high product quality.</li>
+                        <li><strong>API integration:</strong> Implement integrations with external services and APIs to enhance the application's functionality.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Work closely with the designer and CTO to implement the design and technical strategy.</li>
+                <li><strong>Learn and develop:</strong> Continuously improve your skills and learn new technologies to enhance work efficiency.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Technical expert:</strong> You have experience in mobile app development and are familiar with modern programming languages.</li>
+                <li><strong>Problem-oriented:</strong> You can find and fix issues in the code, ensuring its stability and performance.</li>
+                <li><strong>Team player:</strong> You are ready to work in a team, share your ideas, and listen to others.</li>
+                <li><strong>Eager to learn:</strong> You strive to continuously learn and grow, mastering new technologies and development methods.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Mobile app development experience:</strong> Practical experience in developing applications for iOS and Android.</li>
+                <li><strong>Full-stack development:</strong> Knowledge of both frontend and backend technologies.</li>
+                <li><strong>API integration:</strong> Experience working with RESTful APIs and other external services.</li>
+                <li><strong>Development tools:</strong> Knowledge of tools and methods such as Git, CI/CD, Docker, etc.</li>
+                <li><strong>Artificial Intelligence:</strong> Experience working with AI technologies and integrating them into mobile applications. Knowledge of machine learning and deep learning.</li>
+                <li><strong>Big Data:</strong> Skills in working with big data, its analysis, and processing. Experience with platforms for storing and analyzing big data.</li>
+                <li><strong>Security:</strong> Deep understanding of security aspects in mobile applications, including user data protection and ensuring privacy.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Why join us:</strong></p>
+            <ul>
+                <li><strong>Impact on the product:</strong> Your work will directly affect the success of the product and user satisfaction.</li>
+                <li><strong>Innovative environment:</strong> Join a team that values creativity, collaboration, and continuous learning.</li>
+                <li><strong>Opportunities for equity in the company:</strong> As an early team member, you will have a chance to earn equity and participate in the company's success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to experiment, implement your ideas, and influence the future of our technologies.</li>
+            </ul>
+        
+            <div class="cta-container">
+            
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+    
+
+        <section id="section2" class="section hidden">
+            <h2>Marketer (CMO)</h2>
+            <div class="avatar-container">
+                <img src="marketer.jpg" alt="Marketer Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description: </strong></p>
+            <p class="description">Are you a passionate marketer ready to help a startup achieve its ambitious goals? Looking for an opportunity to work in a dynamic environment where your ideas can have a direct impact? Join the team as a marketer and help promote the product to the market!</p>
+        
+            <p class="highlight"><strong>As a marketer, you will:</strong></p>
+            <ul>
+                <li><strong>Develop marketing strategy:</strong> Create and implement marketing plans to promote the mobile app.
+                    <ul>
+                        <li><strong>Market analysis:</strong> Research the market, competitors, and target audience to identify opportunities and threats.</li>
+                        <li><strong>Content creation:</strong> Develop creative materials and campaigns to attract and retain users.</li>
+                        <li><strong>SMM and SEO:</strong> Manage our social media and optimize content for improved visibility in search engines.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Work closely with the designer and developers to align marketing efforts with product strategy.</li>
+                <li><strong>Measure and analyze:</strong> Use analytics and metrics to assess the effectiveness of marketing campaigns and make improvements.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Innovative marketer:</strong> We are looking for a creative person who is eager to learn and apply new approaches to marketing. Experience is welcome, but your willingness to grow with us and share fresh ideas is key.</li>
+                <li><strong>Analytically savvy:</strong> You can analyze data and make informed decisions based on it.</li>
+                <li><strong>Communicator:</strong> You can clearly and effectively convey your ideas and concepts both within the team and to external audiences.</li>
+                <li><strong>Team player:</strong> You are ready to work in a team, share your ideas, and listen to others’ opinions.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Social media management:</strong> Experience with social media platforms and analytics tools.</li>
+                <li><strong>SEO and content marketing:</strong> Knowledge of best practices in SEO and content creation optimized for search engines.</li>
+                <li><strong>Analytical tools:</strong> Experience with analytics tools, such as Google Analytics, and using data for decision-making.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Why join:</strong></p>
+            <ul>
+                <li><strong>Impact on the product:</strong> Your marketing efforts will directly influence the product's success and its positioning in the market.</li>
+                <li><strong>Innovative environment:</strong> Join a team that values creativity, collaboration, and continuous learning.</li>
+                <li><strong>Opportunities to earn equity in the company:</strong> As an early team member, you'll have a chance to earn equity and participate in the company's success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to experiment, implement your ideas, and influence the future of our marketing strategies.</li>
+            </ul>
+        
+            <div class="cta-container">
+        
+            </div>
+        </section>
+        
+        <section id="section3" class="section hidden">
+            <h2>Designer</h2>
+            <div class="avatar-container">
+                <img src="designer.jpg" alt="Designer Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description: </strong></p>
+            <p class="description">Are you a talented designer looking to create a unique and memorable user experience? Are you seeking an opportunity to work in a dynamic startup environment where your ideas can come to life? Join the team as a designer and help create a product that will impress users!</p>
+        
+            <p class="highlight"><strong>As a designer, you will:</strong></p>
+            <ul>
+                <li><strong>Create designs:</strong> Develop intuitive and visually appealing user interfaces for our mobile app.
+                    <ul>
+                        <li><strong>UI/UX design:</strong> Design interfaces that ensure usability and aesthetics, considering users' needs and expectations.</li>
+                        <li><strong>Prototyping:</strong> Create interactive prototypes for testing and demonstrating functionality.</li>
+                        <li><strong>Visual design:</strong> Develop visual elements such as icons, illustrations, and graphics that align with the app's overall style.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Work closely with developers and the CTO to implement the design in the final product.</li>
+                <li><strong>Research and improve:</strong> Conduct user research, gather feedback, and make design improvements based on data.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Creative professional:</strong> You have a portfolio showcasing your experience and creativity in design.</li>
+                <li><strong>User-oriented:</strong> You can think from the user's perspective and create designs that meet their needs.</li>
+                <li><strong>Team player:</strong> You are ready to collaborate with other team members, share your ideas, and listen to their feedback.</li>
+                <li><strong>Technically savvy:</strong> You are familiar with modern design tools and methods, such as Sketch, Figma, Adobe Creative Suite, etc.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Experience in UI/UX design:</strong> Practical experience in developing user interfaces and improving user experience.</li>
+                <li><strong>Prototyping:</strong> Ability to create interactive prototypes for testing and presentations.</li>
+                <li><strong>Web and mobile design:</strong> Experience in designing for mobile applications and web platforms.</li>
+                <li><strong>Communication skills:</strong> Ability to clearly and effectively convey your ideas and concepts.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Why join:</strong></p>
+            <ul>
+                <li><strong>Impact on the product:</strong> Your design will define the user experience and visual identity of the product.</li>
+                <li><strong>Innovative environment:</strong> Join a team that values creativity, collaboration, and continuous learning.</li>
+                <li><strong>Opportunities to earn equity in the company:</strong> As an early team member, you'll have a chance to earn equity and participate in the company's success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to experiment, implement your ideas, and influence the future of our technologies.</li>
+            </ul>
+        
+            <div class="cta-container">
+        
+            </div>
+        </section>
+        
+        <section id="section4" class="section hidden">
+            <h2>Financial Officer (CFO)</h2>
+            <div class="avatar-container">
+                <img src="cfo.jpg" alt="Financial Officer Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description:</strong></p>
+            <p class="description">Are you an experienced financial officer ready to help a startup effectively manage resources and achieve financial goals? Looking for an opportunity to work in a dynamic environment where your ideas and skills will be in demand? Join our team as CFO and help us build a sustainable financial foundation for our business!</p>
+        
+            <p class="highlight"><strong>As CFO, you will:</strong></p>
+            <ul>
+                <li><strong>Manage finances:</strong> Develop and implement the financial strategy, manage the company's budget and cash flow.
+                    <ul>
+                        <li><strong>Budgeting and forecasting:</strong> Create budgets, forecast revenues and expenses, and monitor the execution of financial plans.</li>
+                        <li><strong>Financial reporting:</strong> Prepare financial reports, analyze financial performance, and provide recommendations for improvement.</li>
+                        <li><strong>Attracting investments:</strong> Work on attracting investments, developing investment proposals and presentations.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Work closely with other executives and the founder to align financial strategy with the overall company strategy.</li>
+                <li><strong>Control risks:</strong> Evaluate financial risks, develop strategies to mitigate them, and ensure compliance with financial regulations.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Financial expert:</strong> You possess competencies in corporate financial management (including ventures such as startups) and have a deep understanding of financial mechanisms.</li>
+                <li><strong>Strategic thinker:</strong> You can develop and implement financial strategies that contribute to business growth and development.</li>
+                <li><strong>Analytically savvy:</strong> You can analyze data and make informed decisions based on it.</li>
+                <li><strong>Team player:</strong> You are ready to work in a team, share your ideas, and listen to others’ opinions.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Financial management:</strong> Experience in financial management, including budgeting, forecasting, and financial analysis.</li>
+                <li><strong>Investment attraction:</strong> Experience in attracting investments and presenting financial projects to investors.</li>
+                <li><strong>Regulatory compliance:</strong> Knowledge of financial regulations and compliance requirements.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Why join:</strong></p>
+            <ul>
+                <li><strong>Impact on the company:</strong> Your financial strategy will directly influence the company's success and development.</li>
+                <li><strong>Innovative environment:</strong> Join a team that values creativity, collaboration, and continuous learning.</li>
+                <li><strong>Opportunities to earn equity in the company:</strong> As an early team member, you'll have a chance to earn equity and participate in the company's success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to experiment, implement your ideas, and influence the future of our financial strategies.</li>
+            </ul>
+        
+            <div class="cta-container">
+        
+            </div>
+        </section>
+        
+        <section id="section5" class="section hidden">
+            <h2>Technical Director (CTO)</h2>
+            <div class="avatar-container">
+                <img src="cto.jpg" alt="Technical Director Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description:</strong></p>
+            <p class="description">Are you an experienced technical director ready to lead a talented team and oversee product development? Looking for an opportunity to work in a dynamic environment where your expertise and vision will be in demand? Join the team as CTO and help us build innovative solutions!</p>
+        
+            <p class="highlight"><strong>As CTO, you will:</strong></p>
+            <ul>
+                <li><strong>Oversee product development:</strong> Manage the technical direction of the product, ensuring its scalability and performance.
+                    <ul>
+                        <li><strong>Architecture design:</strong> Develop product architecture and technology stack, ensuring compatibility with the latest standards and technologies.</li>
+                        <li><strong>Team management:</strong> Lead the development team, providing mentorship and support in their professional growth.</li>
+                        <li><strong>Quality assurance:</strong> Establish processes for quality assurance and testing to ensure the product meets users' needs and expectations.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Work closely with other executives and the founder to align the technical strategy with the overall business strategy.</li>
+                <li><strong>Research and innovate:</strong> Keep abreast of industry trends, technologies, and tools, and implement them to improve product quality.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Technical expert:</strong> You possess competencies in software development and architecture, with experience in mobile applications and web technologies.</li>
+                <li><strong>Strategic thinker:</strong> You can develop and implement technical strategies that contribute to product success and business development.</li>
+                <li><strong>Leader:</strong> You can motivate the team and ensure effective collaboration between different departments.</li>
+                <li><strong>Innovative:</strong> You are ready to experiment with new technologies and approaches.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Experience in software development:</strong> Practical experience in developing mobile applications and web platforms.</li>
+                <li><strong>Management experience:</strong> Experience managing a technical team and leading product development.</li>
+                <li><strong>Knowledge of technologies:</strong> Familiarity with modern programming languages, frameworks, and tools.</li>
+            </ul>
+        
+            <p class="highlight"><strong>Why join:</strong></p>
+            <ul>
+                <li><strong>Impact on the product:</strong> Your technical decisions will define the product's architecture and its future development.</li>
+                <li><strong>Innovative environment:</strong> Join a team that values creativity, collaboration, and continuous learning.</li>
+                <li><strong>Opportunities to earn equity in the company:</strong> As an early team member, you'll have a chance to earn equity and participate in the company's success.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to experiment, implement your ideas, and influence the future of our technologies.</li>
+            </ul>
+        
+            <div class="cta-container">
+        
+            </div>
+        </section>
+        
+
+
+
+
+
+
+
+
+
+
+        <section id="section5" class="section hidden">
+            <h2>Lawyer</h2>
+            <div class="avatar-container">
+                <img src="lawyer.jpg" alt="Lawyer Avatar" class="avatar">
+            </div>
+            <p class="highlight"><strong>Description:</strong></p>
+            <p class="description">Are you an experienced and/or responsible lawyer specializing in issues related to startups and technology companies? Are you looking for an opportunity to influence legal strategy and provide legal support at all stages of business development? Join our team as a lawyer and help us create a legal foundation for the startup!</p>
+            
+            <p class="highlight"><strong>As a lawyer, you will:</strong></p>
+            <ul>
+                <li><strong>Legal support:</strong> Provide consultations on legal matters related to the startup's operations.
+                    <ul>
+                        <li><strong>Document preparation:</strong> Prepare and analyze legal documents, including contracts, licenses, and agreements.</li>
+                        <li><strong>Intellectual property work:</strong> Protect the company's intellectual property rights, file patents and trademarks.</li>
+                        <li><strong>Risk management:</strong> Assess and manage legal risks, develop strategies to mitigate them.</li>
+                    </ul>
+                </li>
+                <li><strong>Collaborate with the team:</strong> Interact with other team members to align business and legal strategies.</li>
+                <li><strong>Compliance:</strong> Ensure the company's activities comply with current legislation and regulations.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Who you are:</strong></p>
+            <ul>
+                <li><strong>Experienced professional:</strong> You have experience in corporate and technology law.</li>
+                <li><strong>Analytical mind:</strong> You are able to analyze complex legal issues and propose practical solutions.</li>
+                <li><strong>Communication skills:</strong> You can express your thoughts clearly and work well in a team.</li>
+                <li><strong>Responsible:</strong> You are ready to take responsibility for the legal aspects of the company's operations.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Desired skills and experience:</strong></p>
+            <ul>
+                <li><strong>Specialization in technology law:</strong> Knowledge of the legal regulations in the IT sector.</li>
+                <li><strong>Experience with startups:</strong> Understanding the specifics of legal support for startup projects.</li>
+                <li><strong>Experience in intellectual property:</strong> Knowledge of registration and protection procedures for intellectual property rights.</li>
+            </ul>
+            
+            <p class="highlight"><strong>Why join:</strong></p>
+            <ul>
+                <li><strong>Importance of the role:</strong> Your work will be crucial for protecting the company's interests and ensuring its legal sustainability.</li>
+                <li><strong>Professional development:</strong> Participate in the development of a high-tech environment where each day brings new legal challenges.</li>
+                <li><strong>Opportunities for career growth:</strong> As part of a young and ambitious team, you will be able to actively influence the future of the company and your career.</li>
+                <li><strong>Flexibility and autonomy:</strong> Enjoy the freedom to implement your ideas, develop legal strategies, and influence business development.</li>
+            </ul>
+            
+            <div class="cta-container">
+        
+            </div>
+        </section>
+        
+        <section id="section6" class="section hidden">
+            <h2>Join Us</h2>
+            <!-- <div style="text-align: center; align-items: center; align-self: center;">   
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc7gdxXUCcRp8mNmUE7cP2T-MDR3rcXvpwKmtJAtsWsEbFqHw/viewform?embedded=true" id="form" width="640" height="860" frameborder="0" marginheight="0" marginwidth="0" >Loading...</iframe>
+            </div>
+            <p  class="highlight"><strong>In case the form does not open:</strong></p><br> -->
+            <div style="text-align: center; align-items: center; align-self: center;">   
+                <a href="https://forms.gle/PFqpj5qhvmzD5TQf7" class="shine-button" target="_blank">Open the form in a new tab (Russian)</a>
+            </div>
+        </section>
+        
+        </section>
+        
+        <script src="team.js"></script>
+        
+        <div id="footer-placeholder"></div>
+        <script src="footer.js"></script>
+        <button class="button" onclick="window.location.href = '#'">
+            <div class="arrow"></div>
+        </button>
+        
+        </body>
+        
+        </html>
+        
